@@ -2,6 +2,8 @@ import './App.css';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import Slider from "react-slick";
+import Frameworks from "./components/Frameworks";
+import YoutubeVideos from "./components/YoutubeVideos";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -108,12 +110,6 @@ const articles = [
   },
 ]
 
-const videos = [
-  'https://www.youtube.com/embed/JCaGGw-WWks',
-  'https://www.youtube.com/embed/pBRbQ4MfkAc',
-  'https://www.youtube.com/embed/ykJcySti-ms'
-];
-
 const settings = {
   dots: true,
   infinite: false,
@@ -149,46 +145,7 @@ function App() {
 	          <Job key={idx} idx={idx} title={job.title} year={job.year} position={job.position} color={job.color}></Job>
 	        ))}
 	      </div>
-        <section>
-	      <h2>{t('Technical background')}</h2>
-        <div>
-          <h3>{t('Frameworks')}</h3>
-          <div className="framework-list">
-            <div className="framework">
-              <img src="/frameworks/react.png" alt="react" />
-              React
-            </div>
-            <div className="framework">
-              <img src="/frameworks/preact.png" alt="preact" />
-              Preact
-            </div>
-            <div className="framework">
-              <img src="/frameworks/vue.png" alt="vue" />
-              Vue
-            </div>
-            <div className="framework">
-              <img src="/frameworks/angular.png" alt="angular" />
-              Angular
-            </div>
-            <div className="framework">
-              <img src="/frameworks/polymer.png" alt="polymer" />
-              Polymer
-            </div>
-            <div className="framework">
-              <img src="/frameworks/rxjs.png" alt="rxjs" />
-              RXJS
-            </div>
-            <div className="framework">
-              <img src="/frameworks/svelte.png" alt="svelte" />
-              Svelte
-            </div>
-            <div className="framework">
-              <img src="/frameworks/jquery.png" alt="jquery" />
-              JQuery
-            </div>
-          </div>
-        </div>
-        </section>
+          <Frameworks sectionTitle={t('Technical background')} subsectionTitle={t('Frameworks')} />
         <section>
           <h3>{t('Bundlers CI and devOps')}</h3>
           <div className="framework-list">
@@ -215,7 +172,7 @@ function App() {
           </div>
         </section>
 	      <div>
-          {t('Technical bacgkround description')}
+          {t('Technical background description')}
  	      </div>
         <div>
           <h2>{t('Articles')}</h2>
@@ -236,18 +193,10 @@ function App() {
           <iframe width="560" height="315" src="https://www.youtube.com/embed/YKjCysJKqxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div>
+        <section>
           <h2>{t('My youtube videos')}</h2>
-          <Slider {...settings}>
-          {videos.map(url => {
-            return (
-              <div>
-               <iframe width="560" height="315" src={url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            )
-          })}
-          </Slider>
-        </div>
+              <YoutubeVideos />
+        </section>
         <ul>
           <li>I have open-source projects on GitHub and there are a few projects that are in Vue-awesome-list</li>
           <li>I have this rank on CodeWars</li>
