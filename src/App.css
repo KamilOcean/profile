@@ -59,6 +59,12 @@ body {
   border-radius: 50%;
 }
 
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+}
+
 .jobs {
   width: 100%;
   max-width: 800px;

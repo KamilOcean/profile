@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 
-export default function YoutubeVideos() {
+export default function Videos() {
     const videos = [
         'https://www.youtube.com/embed/JCaGGw-WWks',
         'https://www.youtube.com/embed/pBRbQ4MfkAc',
