@@ -9,7 +9,7 @@ export default function Videos() {
 
     const settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         pauseOnHover: true,
         speed: 500,
@@ -18,7 +18,7 @@ export default function Videos() {
       };
 
     return(
-    <Slider {...settings}>
+    <Slider {...settings} className="youtube">
     {videos.map(url => {
       return (
         <div>

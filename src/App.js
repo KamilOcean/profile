@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import Frameworks from "./components/Frameworks";
 import Videos from "./components/Videos";
 import LangSwitcher from "./components/LangSwitcher";
+import Contacts from "./components/Contacts";
 
 const jobs = [
   {
@@ -58,7 +59,7 @@ const articles = [
 
 const settings = {
   dots: true,
-  infinite: false,
+  infinite: true,
   autoplay: true,
   pauseOnHover: true,
   speed: 500,
@@ -78,15 +79,34 @@ const Job = (props) => (
   </>
 )
 
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+if (params?.lang) {
+  i18n.changeLanguage(params.lang);
+}
+
 function App() {
   const { t } = useTranslation();
   return (
     <div className="App">
       <header className="header">
-        <LangSwitcher />
+        <LangSwitcher i18n={i18n} />
       </header>
       <h1>{t('Kamil Ocean is')}</h1>
       <img className="main-photo" src="/Kamil.jpg" alt="Kamil Ocean" />
+      <Contacts />
+      <div>
+        <h2>{t('Terms')}</h2>
+        <ul className="terms">
+          <li>{t('Terms1')}</li>
+          <li>{t('Terms2')}</li>
+          <li>{t('Terms3')}</li>
+          <li>{t('Terms4')}</li>
+          <li>{t('Terms5')}</li>
+          <li>{t('Terms6')}</li>
+          <li>{t('Terms7')}</li>
+        </ul>
+      </div>
 	    <div>
 	      <h2>{t('Commercial work experience')}</h2>
 	      <div className="jobs">
@@ -95,33 +115,8 @@ function App() {
 	        ))}
 	      </div>
           <Frameworks sectionTitle={t('Technical background')} subsectionTitle={t('Frameworks')} />
-        <section>
-          <h3>{t('Bundlers CI and devOps')}</h3>
-          <div className="framework-list">
-            <div className="framework">
-              <img src="/bundlers/docker.png" alt="docker" />
-              Docker
-            </div>
-            <div className="framework">
-              <img src="/bundlers/webpack.png" alt="webpack" />
-              Webpack
-            </div>
-            <div className="framework">
-              <img src="/bundlers/grunt.png" alt="grunt" />
-              Grunt
-            </div>
-            <div className="framework">
-              <img src="/bundlers/github.png" alt="github" />
-              GitHub
-            </div>
-            <div className="framework">
-              <img src="/bundlers/gitlab.png" alt="gitlab" />
-              GitLab
-            </div>
-          </div>
-        </section>
 	      <div>
-          {t('Technical background description')}
+          {t('Technical bacgkround description')}
  	      </div>
         <div>
           <h2>{t('Articles')}</h2>
@@ -138,22 +133,50 @@ function App() {
         </div>
         <div>
           <h2>{t('My public speech')}</h2>
-          <div>
+          <div className="iframeVideo">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/YKjCysJKqxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <section>
           <h2>{t('My youtube videos')}</h2>
-              <Videos />
+          <Videos />
         </section>
-        <ul>
-          <li>I have open-source projects on GitHub and there are a few projects that are in Vue-awesome-list</li>
-          <li>I have this rank on CodeWars</li>
-          <li>I have this rank on StackOverflow</li>
-          <li>I am owner of the popular Russian social community Love Frontend</li>
-          <li>I studied web-design and Product Management just for myself. I know how to test hypotesis and I made a few CJM for my previous jobs. I also interview users to collect UX feedbacks about products.</li>
-
-        </ul>
+        <section>
+          <h2>Open-source projects on GitHub</h2>
+          <div className="horizontal-content">
+            <div>
+              I have a few open-source projects on my <a href="https://github.com/KamilOcean">GitHub profile</a>. Few of them are in vue-awesome-list: <a href="https://github.com/KamilOcean/vue-sticker">vue-sticker</a>, <a href="https://github.com/RGRU/vue-mods-names">vue-mods-names</a>.
+            </div>
+            <img src="/vue-sticker.gif" />
+          </div>
+        </section>
+        <section>
+          <h2>Other</h2>
+          <div className="horizontal-content reversed">
+            <div>
+              I am owner of the popular Russian community <a href="https://vk.com/love_frontend">Love Frontend</a>
+            </div>
+            <img src="/LF.jpg" alt="Love Frontend" className="lf-logo" />
+          </div>
+          <div className="horizontal-content">
+            <div>
+              I have this rank on <a href="https://www.codewars.com/users/KamilOcean">CodeWars
+            </a></div>
+            <img src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true" alt="codewars" />
+          </div>
+          <div className="horizontal-content reversed">
+            <div>
+              I have this rank on <a href="https://stackoverflow.com/users/7047488/kamil-ocean">Stack Overflow</a>: 526 scores
+            </div>
+            <img src="/stackoverflow.jpg" alt="stackoveflow" />
+          </div>
+          <div className="horizontal-content">
+            <div className="right-text">
+              I studied web-design and Product Management. I know how to test hypotesis and I made <a href="https://miro.com/app/board/o9J_lb-0teE=/?share_link_id=262422631335">a CJM</a> for my previous client. I also interview users to check hypotesis and collect UX feedbacks about products.
+            </div>
+            <img src="/cjm.jpg" alt="my CJM" />
+          </div>
+        </section>
         <h2>My commercial experience</h2>
         <ul>
           <li>E-commerce project on Vue</li>
@@ -161,6 +184,7 @@ function App() {
           <li>Fornex</li>
           <li>DreamTeam mobile</li>
         </ul>
+        <Contacts />
 	    </div>
     </div>
   );
