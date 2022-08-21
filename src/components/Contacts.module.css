@@ -1,4 +1,29 @@
 .wrapper {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #111827;
+  margin: 0;
+  transition: 0.3s linear;
+}
+
+.contact:hover {
+  transition: 0.3s linear;
+  opacity: 0.35;
+}
+
+.contact__icon {
+  margin-right: 20px;
 }

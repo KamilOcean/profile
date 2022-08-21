@@ -6,6 +6,7 @@ import Frameworks from "./components/Frameworks";
 import Videos from "./components/Videos";
 import LangSwitcher from "./components/LangSwitcher";
 import Contacts from "./components/Contacts";
+import mainphoto from "./images/mainphoto.png";
 
 const jobs = [
   {
@@ -92,21 +93,25 @@ function App() {
       <header className="header">
         <LangSwitcher i18n={i18n} />
       </header>
-      <h1>{t('Kamil Ocean is')}</h1>
-      <img className="main-photo" src="/Kamil.jpg" alt="Kamil Ocean" />
-      <Contacts />
-      <div>
-        <h2>{t('Terms')}</h2>
-        <ul className="terms">
-          <li>{t('Terms1')}</li>
-          <li>{t('Terms2')}</li>
-          <li>{t('Terms3')}</li>
-          <li>{t('Terms4')}</li>
-          <li>{t('Terms5')}</li>
-          <li>{t('Terms6')}</li>
-          <li>{t('Terms7')}</li>
+      <section className="main">
+        <img className="main-photo" src={mainphoto} alt="KamilOcean" />
+        <div className="main-info">
+          <h1 className="main-title">{t('Kamil Ocean is')}</h1>
+          <Contacts />
+        </div>
+      </section>
+      <section className="terms-block">
+        <h2 className="section-title">{t('Terms')}</h2>
+        <ul className="terms__items">
+          <li className="terms__item">{t('Terms1')}</li>
+          <li className="terms__item">{t('Terms2')}</li>
+          <li className="terms__item">{t('Terms3')}</li>
+          <li className="terms__item">{t('Terms4')}</li>
+          <li className="terms__item">{t('Terms5')}</li>
+          <li className="terms__item">{t('Terms6')}</li>
+          <li className="terms__item">{t('Terms7')}</li>
         </ul>
-      </div>
+      </section>
 	    <div>
 	      <h2>{t('Commercial work experience')}</h2>
 	      <div className="jobs">
