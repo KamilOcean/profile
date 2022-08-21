@@ -6,7 +6,9 @@ import Frameworks from "./components/Frameworks";
 import Videos from "./components/Videos";
 import LangSwitcher from "./components/LangSwitcher";
 import Contacts from "./components/Contacts";
+import Articles from './components/Articles';
 import mainphoto from "./images/mainphoto.png";
+import Footer from './components/Footer';
 
 const jobs = [
   {
@@ -35,38 +37,6 @@ const jobs = [
   }
 ];
 
-const articles = [
-  {
-    title: 'How to use Composition API instead of Vuex in Vue3 and also in Vue2',
-    url: 'https://dev.to/kamilocean/how-to-use-composition-api-instead-of-vuex-in-vue3-and-also-in-vue2-a0f',
-    imgUrl: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jpall6wqhe20jo7xq5th.jpeg'
-  },
-  {
-    title: 'What a media placeholder is and how to implement it?',
-    url: 'https://dev.to/kamilocean/what-a-media-placeholder-is-and-how-to-implement-it-18pj',
-    imgUrl: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/o9mcq30rqnd2tf1n6e22.jpg'
-  },
-  {
-    title: 'How to remember the ways of rounding a number to an integer?',
-    url: 'https://dev.to/kamilocean/how-to-remember-the-ways-of-rounding-a-number-to-an-integer-hn3',
-    imgUrl: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sf8tlr9b1kz217cetsng.jpg'
-  },
-  {
-    title: 'Какой тип числа у Number в JS?',
-    url: 'https://habr.com/ru/post/525330/',
-    imgUrl: 'https://habrastorage.org/r/w780q1/getpro/habr/upload_files/633/a1b/93f/633a1b93f0b6a413e59ea4cd832b393f.jpg'
-  },
-]
-
-const settings = {
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  pauseOnHover: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3
-};
 
 const Job = (props) => (
   <>
@@ -101,7 +71,7 @@ function App() {
         </div>
       </section>
       <section className="terms-block">
-        <h2 className="section-title">{t('Terms')}</h2>
+        <h2 className="terms__title">{t('Terms')}</h2>
         <ul className="terms__items">
           <li className="terms__item">{t('Terms1')}</li>
           <li className="terms__item">{t('Terms2')}</li>
@@ -120,22 +90,7 @@ function App() {
 	        ))}
 	      </div>
           <Frameworks sectionTitle={t('Technical background')} subsectionTitle={t('Frameworks')} />
-	      <div>
-          {t('Technical bacgkround description')}
- 	      </div>
-        <div>
-          <h2>{t('Articles')}</h2>
-            <Slider {...settings} className="articles">
-              {articles.map(article => {
-                return (
-                  <a className="article" href={article.url}>
-                    <img src={article.imgUrl} alt={article.title} />
-                    <strong>{article.title}</strong>
-                  </a>
-                )
-              })}
-            </Slider>
-        </div>
+          <Articles articlesTitle={t('Articles')}/>
         <div>
           <h2>{t('My public speech')}</h2>
           <div className="iframeVideo">
@@ -189,8 +144,8 @@ function App() {
           <li>Fornex</li>
           <li>DreamTeam mobile</li>
         </ul>
-        <Contacts />
 	    </div>
+      <Footer />
     </div>
   );
 }

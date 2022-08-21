@@ -108,17 +108,17 @@ const other = [
 export default function Frameworks({sectionTitle, subsectionTitle}) {
     return(
         <section className="frameworks">
-        <h2>{sectionTitle}</h2>
+        <h2 className="frameworks__title">{sectionTitle}</h2>
       <div>
-        <h3>{subsectionTitle}</h3>
+        <h3 className="frameworks__subsection-title">{subsectionTitle}</h3>
         <div className="framework-list">
           {frameworks.map((framework, idx) => (
             <div className="framework">
-              <img
+              <img className="framework__image"
                 key={idx}
                 src={`/frameworks/${framework.slug}.png`}
                 alt={framework.slug} />
-              {framework.name}
+              <p className="framework__name">{framework.name}</p>
             </div>
           ))}
         </div>
