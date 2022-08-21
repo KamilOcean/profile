@@ -18,6 +18,7 @@ i18n
           "Terms4": "Оплата криптовалютой. BTC, USDT",
           "Terms5": "По возможности не официально. Без всяких оформлений.",
           "Terms6": "В случае оформления через Российское ИП, вы будете оплачивать мои налоги сами",
+          "Terms7": "Если у Вас нет Технического Задания, то я составлю его сам, но эти часы будут входить в стоимость моей работы",
           "Commercial work experience": "Commercial work experience more than 8 years",
           "Technical background": "Technical background",
           "Frameworks": "I work with all popular frameworks",

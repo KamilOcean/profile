@@ -1,7 +1,6 @@
 import './App.css';
 import i18n from './utils/i18n';
 import { useTranslation } from "react-i18next";
-import Slider from "react-slick";
 import Frameworks from "./components/Frameworks";
 import Videos from "./components/Videos";
 import LangSwitcher from "./components/LangSwitcher";
@@ -45,7 +44,7 @@ const Job = (props) => (
     </div>
     <div className={`job job_${props.idx}`} style={{ borderColor: props.color }}>
       <div className="job__title" style={{ color: props.color }}>{props.title}</div>
-      <div>{props.position}</div>
+      <p className="job__position">{props.position}</p>
     </div>
   </>
 )
@@ -83,7 +82,7 @@ function App() {
         </ul>
       </section>
 	    <div>
-	      <h2>{t('Commercial work experience')}</h2>
+	      <h2 className="job__section-title">{t('Commercial work experience')}</h2>
 	      <div className="jobs">
 	        {jobs.map((job, idx) => (
 	          <Job key={idx} idx={idx} title={job.title} year={job.year} position={job.position} color={job.color}></Job>
