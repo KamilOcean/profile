@@ -2,169 +2,172 @@ import "./Frameworks.css";
 
 const frameworks = [
   {
-    slug: 'react',
-    name: 'React'
+    slug: "react",
+    name: "React",
   },
   {
-    slug: 'vue',
-    name: 'Vue'
+    slug: "vue",
+    name: "Vue",
   },
   {
-    slug: 'polymer',
-    name: 'Polymer'
+    slug: "polymer",
+    name: "Polymer",
   },
   {
-    slug: 'rxjs',
-    name: 'RXJS'
+    slug: "rxjs",
+    name: "RXJS",
   },
   {
-    slug: 'svelte',
-    name: 'Svelte'
+    slug: "svelte",
+    name: "Svelte",
   },
   {
-    slug: 'jquery',
-    name: 'JQuery'
+    slug: "jquery",
+    name: "JQuery",
   },
-]
+];
 
 const frontend = [
   {
-    name: 'SASS'
+    name: "SASS",
   },
   {
-    name: 'LESS'
+    name: "LESS",
   },
   {
-    name: 'SCSS'
+    name: "SCSS",
   },
   {
-    name: 'Tailwind'
+    name: "Tailwind",
   },
   {
-    name: 'Bootstrap'
+    name: "Bootstrap",
   },
   {
-    name: 'Material'
+    name: "Material",
   },
-]
+];
 
 const backend = [
   {
-    name: 'NodeJS'
+    name: "NodeJS",
   },
   {
-    name: 'Go'
+    name: "Go",
   },
   {
-    name: 'GraphQl'
+    name: "GraphQl",
   },
   {
-    name: 'REST API'
+    name: "REST API",
   },
   {
-    name: 'MongoDB'
+    name: "MongoDB",
   },
   {
-    name: 'Postgreesql'
+    name: "Postgreesql",
   },
   {
-    name: 'MySQL'
-  }
-]
+    name: "MySQL",
+  },
+];
 
 const tests = [
   {
-    name: 'Cypress (e2e)'
+    name: "Cypress (e2e)",
   },
   {
-    name: 'Jest (unit test)'
+    name: "Jest (unit test)",
   },
   {
-    name: 'Тестирование скриншотами'
-  }
-]
+    name: "Тестирование скриншотами",
+  },
+];
 
 const cms = [
   {
-    name: 'Wordpress'
+    name: "Wordpress",
   },
   {
-    name: 'Shopify'
+    name: "Shopify",
   },
   {
-    name: 'Strapi'
-  }
-]
+    name: "Strapi",
+  },
+];
 
 const other = [
   {
-    name: 'QuillJS'
+    name: "QuillJS",
   },
   {
-    name: 'ReactiveJS'
-  }
-]
+    name: "ReactiveJS",
+  },
+];
 
-export default function Frameworks({sectionTitle, subsectionTitle}) {
-    return(
-        <section className="frameworks">
-        <h2 className="frameworks__title">{sectionTitle}</h2>
-      <div>
+export default function Frameworks({ sectionTitle, subsectionTitle, description }) {
+  return (
+    <section className="frameworks">
+      <h2 className="frameworks__title">{sectionTitle}</h2>
+      <div className="frameworks__content">
         <h3 className="frameworks__subsection-title">{subsectionTitle}</h3>
         <div className="framework-list">
           {frameworks.map((framework, idx) => (
             <div className="framework">
-              <img className="framework__image"
+              <img
+                className="framework__image"
                 key={idx}
                 src={`/frameworks/${framework.slug}.png`}
-                alt={framework.slug} />
+                alt={framework.slug}
+              />
               <p className="framework__name">{framework.name}</p>
             </div>
           ))}
         </div>
         <div className="frameworks__extend-block">
-            <div className="frameworks__extend-block-list">
-              <h4 className="frameworks__extend-list-title">Frontend</h4>
-              <ul className="frameworks__extend-list">
-                {frontend.map((item) => (
-                  <li className="frameworks__extend-list-item">{item.name}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="frameworks__extend-block-list">
-              <h4 className="frameworks__extend-list-title">Backend</h4>
-              <ul className="frameworks__extend-list">
-                {backend.map((item) => (
-                  <li className="frameworks__extend-list-item">{item.name}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="frameworks__extend-block-list">
-              <h4 className="frameworks__extend-list-title">Tests</h4>
-              <ul className="frameworks__extend-list">
-                {tests.map((item) => (
-                  <li className="frameworks__extend-list-item">{item.name}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="frameworks__extend-block-list">
-              <h4 className="frameworks__extend-list-title">CMS</h4>
-              <ul className="frameworks__extend-list">
-                {cms.map((item) => (
-                  <li className="frameworks__extend-list-item">{item.name}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="frameworks__extend-block-list">
-              <h4 className="frameworks__extend-list-title">Другое</h4>
-              <ul className="frameworks__extend-list">
-                {other.map((item) => (
-                  <li className="frameworks__extend-list-item">{item.name}</li>
-                ))}
-              </ul>
-            </div>
+          <div className="frameworks__extend-block-list">
+            <h4 className="frameworks__extend-list-title">Frontend</h4>
+            <ul className="frameworks__extend-list">
+              {frontend.map((item) => (
+                <li className="frameworks__extend-list-item">{item.name}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="frameworks__extend-block-list">
+            <h4 className="frameworks__extend-list-title">Backend</h4>
+            <ul className="frameworks__extend-list">
+              {backend.map((item) => (
+                <li className="frameworks__extend-list-item">{item.name}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="frameworks__extend-block-list">
+            <h4 className="frameworks__extend-list-title">Tests</h4>
+            <ul className="frameworks__extend-list">
+              {tests.map((item) => (
+                <li className="frameworks__extend-list-item">{item.name}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="frameworks__extend-block-list">
+            <h4 className="frameworks__extend-list-title">CMS</h4>
+            <ul className="frameworks__extend-list">
+              {cms.map((item) => (
+                <li className="frameworks__extend-list-item">{item.name}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="frameworks__extend-block-list">
+            <h4 className="frameworks__extend-list-title">Другое</h4>
+            <ul className="frameworks__extend-list">
+              {other.map((item) => (
+                <li className="frameworks__extend-list-item">{item.name}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-      </section>
-    )
+      <p className="frameworks__description">{description}</p>
+    </section>
+  );
 }

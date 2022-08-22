@@ -23,7 +23,7 @@ i18n
           "Technical background": "Technical background",
           "Frameworks": "I work with all popular frameworks",
           "Bundlers CI and devOps": "",
-          "Technical bacgkround description": "I really do tests for my code by Cypress (e2e) and Jest (unit tests). I also set up screenshot testing by Cypress for my projects at work. I worked with many different CMS like WordPress, Shopify and Strapi. I worked with RestAPI and GraphQL",
+          "Technical background description": "I really do tests for my code by Cypress (e2e) and Jest (unit tests). I also set up screenshot testing by Cypress for my projects at work. I worked with many different CMS like WordPress, Shopify and Strapi. I worked with RestAPI and GraphQL",
           "Articles": "My articles",
           "My public speech": "My public speech",
           "My youtube videos": "My YouTube videos",

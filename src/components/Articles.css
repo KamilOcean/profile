@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 690px) {
+  .articles-block {
+    width: 100%;
+    overflow: hidden;
+}
+}
+
 .articles__title {
     font-weight: 400;
     font-size: 40px;

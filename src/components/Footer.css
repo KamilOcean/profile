@@ -1,5 +1,6 @@
 .footer {
-    background-color: #8BA8B5;
+    position: relative;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +8,17 @@
     box-sizing: border-box;
 }
 
+.footer__background {
+    background-image: url(../images/footer.png);
+    width: 100vw;
+    height: 580px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
 .footer__text {
+    z-index: 10;
     max-width: 420px;
     font-weight: 400;
     font-size: 24px;

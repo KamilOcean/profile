@@ -65,26 +65,70 @@ body {
 /*Main*/
 
 .main {
+  max-width: 1920px;
+  height: 1080px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 307px 0 108px;
+  margin: 0 auto 50px;
+  padding: 100px 307px 0 108px;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.main-info {
+@media screen and (max-width: 425px) {
+  .main {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.main__background-top {
+  width: 890px;
+  height: 80px;
+  position: absolute;
+  right: 307px;
+  top: 40px;
+}
+
+@media screen and (max-width: 425px) {
+  .main__background-top {
+    display: none;
+  }
+}
+
+.main__background-bottom {
+  width: 742px;
+  height: 108px;
+  position: absolute;
+  left: 308px;
+  bottom: 96px;
+}
+
+@media screen and (max-width: 425px) {
+  .main__background-bottom {
+    display: none;
+  }
+}
+
+.main__info {
   text-align: left;
+  max-width: 684px;
+  margin-top: 236px;
 }
 
-.main-title {
-  max-width: 684px;
+.main__title {
+  width: 100%;
   font-weight: 400;
   font-size: 56px;
   line-height: 68px;
   text-align: left;
   color: #111827;
+  margin: 0 0 80px;
 }
 
-.main-photo {
+.main__photo {
+  object-fit: cover;
   max-width: 732px;
   max-height: 695px;
   margin-right: 90px;
@@ -283,15 +327,29 @@ h3 {
 
 }
 
+.terms__title-block {
+  margin-bottom: 80px;
+  position: relative;
+}
+
 .terms__title {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
   color: #111827;
-  margin-left: 88px;
-  margin-bottom: 80px;
+  margin: 0 0 0 88px;
 }
+
+.terms__line {
+  margin-left: 73px;
+}
+
+.terms__dotline_type_left {
+  position: absolute;
+  top: 25px;
+}
+
 
 .terms__items {
   list-style-image: url(./images/check_icon.svg);
@@ -322,24 +380,26 @@ h3 {
 }
 
 .slick-track {
+  margin-right: 0;
   display: flex;
 }
 
 .slick-arrow::before {
-  color: gray;
+  color: #D9D8D3;
   font-size: 45px;
 }
 
+.youtube {
+  background-color: #8BA8B5;
+}
 
+.iframeVideo {
+  background-color: #8BA8B5;
+}
 
 @media only screen and (max-width: 600px) {
   .App {
     margin: 0 20px;
-  }
-
-  .framework-list {
-    max-width: 100%;
-    flex-wrap: wrap;
   }
 
   .framework {

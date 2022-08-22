@@ -5,8 +5,8 @@ export default function Articles({articlesTitle}) {
 
     const settings = {
         dots: true,
-        // infinite: true,
-        // autoplay: true,
+        infinite: true,
+        autoplay: true,
         pauseOnHover: true,
         speed: 500,
         slidesToShow: 3,

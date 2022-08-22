@@ -6,8 +6,15 @@ import Videos from "./components/Videos";
 import LangSwitcher from "./components/LangSwitcher";
 import Contacts from "./components/Contacts";
 import Articles from './components/Articles';
+import Features from "./components/Features";
 import mainphoto from "./images/mainphoto.png";
+import topImage from "./images/border_top.png";
+import bottomImage from "./images/border_bottom.png";
+import termsLine from "./images/line.svg";
+import firstDotine from "./images/first_article_dot-line.svg";
+import secondDotine from "./images/second_article_dot-line.svg";
 import Footer from './components/Footer';
+import PublicSpeech from './components/PublicSpeech';
 
 const jobs = [
   {
@@ -63,14 +70,21 @@ function App() {
         <LangSwitcher i18n={i18n} />
       </header>
       <section className="main">
-        <img className="main-photo" src={mainphoto} alt="KamilOcean" />
-        <div className="main-info">
-          <h1 className="main-title">{t('Kamil Ocean is')}</h1>
+        <img className="main__photo" src={mainphoto} alt="KamilOcean" />
+        <div className="main__info">
+          <h1 className="main__title">{t('Kamil Ocean is')}</h1>
           <Contacts />
         </div>
+        <img className="main__background-top" src={topImage} alt="border_top"/>
+        <img className="main__background-bottom" src={bottomImage} alt="border_bottom"/>
       </section>
       <section className="terms-block">
-        <h2 className="terms__title">{t('Terms')}</h2>
+        <div className="terms__title-block">
+          <h2 className="terms__title">{t('Terms')}</h2>
+          <img className="terms__line" src={termsLine} alt="terms_line" />
+          <img className="terms__dotline_type_left" src={firstDotine} alt="terms__first-dotline"/>
+          <img className="terms__dotline_type_right" src={secondDotine} alt="terms__second-dotline"/>
+        </div>
         <ul className="terms__items">
           <li className="terms__item">{t('Terms1')}</li>
           <li className="terms__item">{t('Terms2')}</li>
@@ -88,18 +102,10 @@ function App() {
 	          <Job key={idx} idx={idx} title={job.title} year={job.year} position={job.position} color={job.color}></Job>
 	        ))}
 	      </div>
-          <Frameworks sectionTitle={t('Technical background')} subsectionTitle={t('Frameworks')} />
+          <Frameworks sectionTitle={t('Technical background')} subsectionTitle={t('Frameworks')} description={t('Technical background description')} />
           <Articles articlesTitle={t('Articles')}/>
-        <div>
-          <h2>{t('My public speech')}</h2>
-          <div className="iframeVideo">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/YKjCysJKqxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <section>
-          <h2>{t('My youtube videos')}</h2>
-          <Videos />
-        </section>
+          <PublicSpeech speechTitle={t("My public speech")}/>
+          <Videos videosTitle={t('My youtube videos')} />
         <section>
           <h2>Open-source projects on GitHub</h2>
           <div className="horizontal-content">
@@ -109,40 +115,7 @@ function App() {
             <img src="/vue-sticker.gif" />
           </div>
         </section>
-        <section>
-          <h2>Other</h2>
-          <div className="horizontal-content reversed">
-            <div>
-              I am owner of the popular Russian community <a href="https://vk.com/love_frontend">Love Frontend</a>
-            </div>
-            <img src="/LF.jpg" alt="Love Frontend" className="lf-logo" />
-          </div>
-          <div className="horizontal-content">
-            <div>
-              I have this rank on <a href="https://www.codewars.com/users/KamilOcean">CodeWars
-            </a></div>
-            <img src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true" alt="codewars" />
-          </div>
-          <div className="horizontal-content reversed">
-            <div>
-              I have this rank on <a href="https://stackoverflow.com/users/7047488/kamil-ocean">Stack Overflow</a>: 526 scores
-            </div>
-            <img src="/stackoverflow.jpg" alt="stackoveflow" />
-          </div>
-          <div className="horizontal-content">
-            <div className="right-text">
-              I studied web-design and Product Management. I know how to test hypotesis and I made <a href="https://miro.com/app/board/o9J_lb-0teE=/?share_link_id=262422631335">a CJM</a> for my previous client. I also interview users to check hypotesis and collect UX feedbacks about products.
-            </div>
-            <img src="/cjm.jpg" alt="my CJM" />
-          </div>
-        </section>
-        <h2>My commercial experience</h2>
-        <ul>
-          <li>E-commerce project on Vue</li>
-          <li>Many small projects</li>
-          <li>Fornex</li>
-          <li>DreamTeam mobile</li>
-        </ul>
+            <Features />
 	    </div>
       <Footer />
     </div>
