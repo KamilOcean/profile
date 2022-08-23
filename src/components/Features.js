@@ -1,6 +1,6 @@
 import "./Features.css";
 import logoLF from "../images/love_frontend_logo.png";
-import featPhoto from "../images/features_photo.png";
+import arrows from "../images/feat_arrows.svg";
 
 export default function Features() {
   return (
@@ -78,7 +78,10 @@ export default function Features() {
               alt="my CJM"
             />
           </div>
-          <img className="features__photo" src={featPhoto} alt="kamil_feat_photo"/>
+          <div className="features__photo">
+            <img className="features__arrows" src={arrows} alt="arrows"/>
+          </div>
+          {/* <img className="features__photo" src={featPhoto} alt="kamil_feat_photo"/> */}
         </div>
       </section>
       {/* End of dekstop version */}
