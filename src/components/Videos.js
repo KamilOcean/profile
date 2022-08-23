@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import './Videos.css';
 
 export default function Videos({videosTitle}) {
   const videos = [
@@ -18,9 +19,9 @@ export default function Videos({videosTitle}) {
   };
 
   return (
-    <section>
+    <section className="videos">
       <h2>{videosTitle}</h2>
-      <Slider {...settings} className="youtube">
+      <Slider {...settings} className="videos__slider">
         {videos.map((url) => {
           return (
             <div>

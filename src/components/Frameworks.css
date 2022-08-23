@@ -22,12 +22,19 @@
     font-size: 40px;
     line-height: 48px;
     color: #111827;
-    margin: 0 0 60px;
+    margin: 0 auto 60px;
 }
 
 @media screen and (max-width: 690px) {
   .frameworks__title {
     text-align: center;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .frameworks__title {
+    font-size: 25px;
+    line-height: 1;
 }
 }
 
@@ -43,6 +50,13 @@
     margin: 0 0 60px;
 }
 
+@media screen and (max-width: 425px) {
+  .frameworks__subsection-title {
+    font-size: 25px;
+    line-height: 1;
+}
+}
+
 .framework-list {
     max-width: 900px;
     margin: 0 auto 60px;
@@ -56,6 +70,26 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .framework-list {
+      max-width: calc(100% - 10px * 2);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 285px) {
+    .framework-list {
+      max-width: calc(100% - 10px * 2);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
       justify-items: center;
     }
   }
@@ -95,6 +129,12 @@
     background-position: center;
   }
 
+  @media screen and (max-width: 1080px) {
+    .frameworks__extend-block {
+      padding: 60px 50px;
+    }
+  }
+
   @media screen and (max-width: 690px) {
     .frameworks__extend-block {
       display: none;
@@ -112,14 +152,6 @@
     padding: 0;
   }
 
-  .frameworks__extend-list-item {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: #111827;
-  }
-
   .frameworks__extend-list-title {
     font-weight: 700;
     font-size: 24px;
@@ -130,6 +162,14 @@
     margin: 0 0 40px;
   }
 
+  @media screen and (max-width: 1080px) {
+    .frameworks__extend-list-title {
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+  }
+
   .frameworks__extend-list-item {
     font-weight: 400;
     font-size: 24px;
@@ -138,6 +178,15 @@
     color: #111827;
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 1080px) {
+    .frameworks__extend-list-item {
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+  }
+
 
   .frameworks__extend-list-item:last-of-type {
     margin-bottom: 0;
