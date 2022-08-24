@@ -1,3 +1,4 @@
+import './LangSwitcher.css';
 import React, { useState } from "react";
 
 export default function LangSwitcher(props) {
@@ -10,8 +11,8 @@ export default function LangSwitcher(props) {
   }
 
   return (
-    <select onChange={handleLangChange} value={language}>
-      <option value="en" selected>En</option>
+    <select className="lang__switcher" onChange={handleLangChange} value={language}>
+      <option className="lang__option" value="en" selected>En</option>
       <option value="ru">Ru</option>
     </select>
   )

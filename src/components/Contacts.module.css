@@ -28,3 +28,21 @@
 .contact__icon {
   margin-right: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .contact {
+      font-size: 18px;
+      line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+      font-size: 18px;
+      line-height: 1.1;
+  }
+
+  .contact__icon {
+    margin-right: 10px;
+  }
+}

@@ -4,17 +4,14 @@ import { useTranslation } from "react-i18next";
 import Frameworks from "./components/Frameworks";
 import Videos from "./components/Videos";
 import LangSwitcher from "./components/LangSwitcher";
-import Contacts from "./components/Contacts";
+import Main from "./components/Main";
 import Articles from "./components/Articles";
 import Features from "./components/Features";
-import mainphoto from "./images/mainphoto.png";
-import topImage from "./images/border_top.png";
-import bottomImage from "./images/border_bottom.png";
 import termsLine from "./images/line.svg";
 import firstDotine from "./images/first_article_dot-line.svg";
 import secondDotine from "./images/second_article_dot-line.svg";
 import Footer from "./components/Footer";
-import PublicSpeech from "./components/PublicSpeech";
+import Speech from "./components/Speech";
 
 const jobs = [
   {
@@ -76,19 +73,7 @@ function App() {
       <header className="header">
         <LangSwitcher i18n={i18n} />
       </header>
-      <section className="main">
-        <img className="main__photo" src={mainphoto} alt="KamilOcean" />
-        <div className="main__info">
-          <h1 className="main__title">{t("Kamil Ocean is")}</h1>
-          <Contacts />
-        </div>
-        <img className="main__background-top" src={topImage} alt="border_top" />
-        <img
-          className="main__background-bottom"
-          src={bottomImage}
-          alt="border_bottom"
-        />
-      </section>
+      <Main mainTitle={t("Kamil Ocean is")} />
       <section className="terms-block">
         <div className="terms__title-block">
           <h2 className="terms__title">{t("Terms")}</h2>
@@ -133,7 +118,7 @@ function App() {
         description={t("Technical background description")}
       />
       <Articles articlesTitle={t("Articles")} />
-      <PublicSpeech speechTitle={t("My public speech")} />
+      <Speech speechTitle={t("My public speech")} />
       <Videos videosTitle={t("My youtube videos")} />
       <Features />
       <Footer />

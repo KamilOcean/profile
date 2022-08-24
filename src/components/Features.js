@@ -112,6 +112,7 @@ export default function Features() {
             <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
           </div>
           <img
+          img className="features__code-image"
             src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true"
             alt="codewars"
           />
@@ -124,7 +125,7 @@ export default function Features() {
             </a>
             : 526 scores
           </div>
-          <img src="/stackoverflow.jpg" alt="stackoveflow" />
+          <img className="features__stack-image"src="/stackoverflow.jpg" alt="stackoveflow" />
         </div>
         <div className="horizontal-content">
           <div className="right-text">
@@ -136,7 +137,7 @@ export default function Features() {
             for my previous client. I also interview users to check hypotesis
             and collect UX feedbacks about products.
           </div>
-          <img src="/cjm.jpg" alt="my CJM" />
+          <img className="features__design-image" src="/cjm.jpg" alt="my CJM" />
         </div>
       </section>
     </div>

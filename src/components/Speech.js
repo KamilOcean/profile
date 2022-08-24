@@ -1,11 +1,13 @@
-export default function PublicSpeech({speechTitle}) {
+import "./Speech.css";
+
+export default function PublicSpeech({ speechTitle }) {
   return (
-    <div className="speech">
-      <h2>{speechTitle}</h2>
+    <section className="speech">
+      <h2 className="speech__title">{speechTitle}</h2>
       <div className="iframeVideo">
         <iframe
-          width="560"
-          height="315"
+          width="905"
+          height="510"
           src="https://www.youtube.com/embed/YKjCysJKqxc"
           title="YouTube video player"
           frameborder="0"
@@ -13,6 +15,6 @@ export default function PublicSpeech({speechTitle}) {
           allowfullscreen
         ></iframe>
       </div>
-    </div>
+    </section>
   );
 }

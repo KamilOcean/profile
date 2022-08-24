@@ -20,14 +20,14 @@ export default function Videos({videosTitle}) {
 
   return (
     <section className="videos">
-      <h2>{videosTitle}</h2>
+      <h2 className="videos__title">{videosTitle}</h2>
       <Slider {...settings} className="videos__slider">
         {videos.map((url) => {
           return (
             <div>
               <iframe
-                width="560"
-                height="315"
+                width="905"
+                height="510"
                 src={url}
                 title="YouTube video player"
                 frameborder="0"

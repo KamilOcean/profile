@@ -1,4 +1,4 @@
-.videos {
+.speech {
     background-image: url(../images/articles_background.png);
     background-size: contain;
     background-position: center;
@@ -7,7 +7,7 @@
     margin: 0 auto 50px;
 }
 
-.videos__title {
+.speech__title {
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
@@ -15,12 +15,13 @@
     margin: 250px 0 0;
 }
 
-.videos__slider {
-    margin-top: 150px;
+.iframeVideo {
+margin-top: 150px;
+
 }
 
 @media screen and (max-width: 600px) {
-    .videos__title {
+    .speech__title {
       font-size: 29px;
     }
   }

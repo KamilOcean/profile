@@ -57,85 +57,12 @@ body {
 }
 
 .header {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   padding-top: 25px;
 }
-
-/*Main*/
-
-.main {
-  max-width: 1920px;
-  height: 1080px;
-  display: flex;
-  margin: 0 auto 50px;
-  padding: 100px 307px 0 108px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-@media screen and (max-width: 425px) {
-  .main {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-
-.main__background-top {
-  width: 890px;
-  height: 80px;
-  position: absolute;
-  right: 307px;
-  top: 40px;
-}
-
-@media screen and (max-width: 425px) {
-  .main__background-top {
-    display: none;
-  }
-}
-
-.main__background-bottom {
-  width: 742px;
-  height: 108px;
-  position: absolute;
-  left: 308px;
-  bottom: 96px;
-}
-
-@media screen and (max-width: 425px) {
-  .main__background-bottom {
-    display: none;
-  }
-}
-
-.main__info {
-  text-align: left;
-  max-width: 684px;
-  margin-top: 236px;
-}
-
-.main__title {
-  width: 100%;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 68px;
-  text-align: left;
-  color: #111827;
-  margin: 0 0 80px;
-}
-
-.main__photo {
-  object-fit: cover;
-  max-width: 732px;
-  max-height: 695px;
-  margin-right: 90px;
-}
-
-/*End Main*/
-
 
 .job__section-title {
   font-weight: 400;
@@ -300,6 +227,14 @@ body {
   color: #ECF0F3;
 }
 
+@media screen and (max-width: 600px) {
+.job__section-title {
+  font-size: 29px;
+  margin-bottom: 50px;
+  }
+}
+
+
 
 @media screen and (max-width: 425px) {
   .jobs {
@@ -330,19 +265,12 @@ h3 {
 
 .terms-block {
   max-width: 1310px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   text-align: left;
 }
 
-@media screen and (max-width: 1600px) {
-  .terms-block {
-    max-width: calc(100% - 75px * 2);
-    margin: 0 auto;
-  }
-}
-
 .terms__title-block {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -352,17 +280,28 @@ h3 {
   font-size: 40px;
   line-height: 48px;
   color: #111827;
-  margin: 0 0 0 88px;
+  margin: 0 0 0 50px;
 }
 
 .terms__line {
   margin-left: 73px;
+  position: absolute;
+  left: -50px;
 }
 
 .terms__dotline_type_left {
   position: absolute;
   top: 25px;
+  left: 385px;
 }
+
+.terms__dotline_type_right {
+  position: absolute;
+  top: 25px;
+  left: 385px;
+}
+
+
 
 .terms__items {
   list-style-image: url(./images/check_icon.svg);
@@ -371,7 +310,7 @@ h3 {
 
 .terms__item {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 29px;
   color: #111827;
   margin-bottom: 40px;
@@ -394,20 +333,53 @@ h3 {
 
 .slick-track {
   margin-right: 0;
+
   display: flex;
 }
 
+.slick-list {
+  position: relative;
+}
+
 .slick-arrow::before {
+  position: absolut;
+  right: 0;
   color: #D9D8D3;
   font-size: 45px;
 }
 
-.youtube {
-
+.slick-next::before {
+  color: #D9D8D3;
 }
 
-.iframeVideo {
+.slick-prev::before {
+  color: #D9D8D3;
+}
+
+/* .iframeVideo {
   background-color: #8BA8B5;
+} */
+
+
+@media screen and (max-width: 1600px) {
+  .terms-block {
+    max-width: calc(100% - 75px * 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .terms__title-block {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .terms__dotline_type_left {
+    display: none;
+  }
+
+  .terms__dotline_type_right {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -419,9 +391,14 @@ h3 {
     margin-top: 20px;
   }
 
-  .terms-block {
-    max-width: calc(100% - 50px * 2);
-    margin: 0 auto;
+  .terms__title {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .terms__line {
+    left: -100px;
+    width: 300px;
   }
 
   .terms__item {
@@ -443,20 +420,20 @@ h3 {
     font-size: 12px;
   }
 
-  .iframeVideo,
+  /* .iframeVideo,
   .youtube {
     height: 0px;
     padding-top: 25px;
     padding-bottom: 56.2%;
     position: relative;
-  }
+  } */
 
   .youtube {
     margin-left: 15px;
     margin-right: 15px;
   }
 
-  .iframeVideo iframe {
+  /* .iframeVideo iframe {
     width: 100%;
     height: 100%;
     top: 0;
@@ -467,5 +444,22 @@ h3 {
   .youtube iframe {
     width: 100%;
     height: 100%;
+  }*/
+} 
+
+
+@media screen and (max-width: 425px) {
+  .terms__title-block {
+    width: calc(100% - 10px * 2);
+  }
+  .terms__title {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-left: 0;
+  }
+
+  .terms__line {
+    left: -80px;
+    width: 200px;
   }
 }

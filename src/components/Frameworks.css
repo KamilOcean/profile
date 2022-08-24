@@ -204,3 +204,16 @@
       font-weight: 500;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .frameworks__title {
+      font-size: 29px;
+      margin-bottom: 25px;
+    }
+
+    .frameworks__subsection-title {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+  }
+    
