@@ -5,11 +5,13 @@
 }
 
 .titleBlock {
+  width: fit-content;
   margin-bottom: 100px;
   position: relative;
 }
 
 .title {
+  max-width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -27,13 +29,13 @@
 .dotlineLeft {
   position: absolute;
   top: 25px;
-  left: 385px;
+  right: -60px;
 }
 
 .dotlineRight {
   position: absolute;
   top: 25px;
-  left: 385px;
+  right: -250px;
 }
 
 .terms {

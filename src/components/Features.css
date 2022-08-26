@@ -36,7 +36,7 @@
   line-height: 29px;
   color: #111827;
   text-align: left;
-  margin: 0;
+  margin: 0 0 25px;
 }
 
 .features__vue-image {
@@ -58,13 +58,14 @@
   font-size: 24px;
   line-height: 29px;
   color: #111827;
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 .features__stack-image {
   object-fit: cover;
   width: 100%;
   max-height: 205px;
+  margin-bottom: 10px;
 }
 
 .features__code {
@@ -75,7 +76,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #111827;
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 .features__code-image {
@@ -88,7 +89,6 @@
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   max-width: 535px;
-  margin-top: -50px;
 }
 
 .features__love-text {
@@ -107,6 +107,7 @@
 .features__love-logo {
   max-width: 150px;
   max-height: 150px;
+  margin-bottom: 15px;
 }
 
 .features__design {
@@ -121,7 +122,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #111827;
-  margin: 0;
+  margin: 0 0 15px;
 }
 
 .features__design-image {
@@ -148,6 +149,13 @@
   left: -150px;
 }
 
+@media screen and (max-width: 1400px) {
+  .features {
+    max-width: calc(100% - 25px * 2);
+    margin: 0 auto 50px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .features__love-logo {
     margin-right: 100px;
@@ -157,6 +165,7 @@
 @media screen and (max-width: 1000px) {
   .features__love-logo {
     margin-right: 150px;
+    margin-top: 50px;
   }
 
   .features__photo {
@@ -169,11 +178,28 @@
 }
 
 /*Mobile block*/
-.features-mobile {
+.features_mobile_type {
+    max-width: calc(100% - 20px * 2);
     display: none;
     margin: 0 auto 50px;
     position: relative;
     z-index: 10;
+}
+
+.features__vue-text_mobile_type {
+  margin: 0 0 15px;
+}
+
+.features__love-text_mobile_type {
+  margin: 0 0 15px;
+}
+
+.features__stack-title_mobile_type {
+  margin: 0 0 15px;
+}
+
+.features__code-title_mobile_type {
+  margin: 0 0 15px;
 }
 
 .horizontal-content {
@@ -205,7 +231,7 @@
     display: none;
   }
 
-  .features-mobile {
+  .features_mobile_type {
     display: block;
     margin: 0 auto 50px;
     position: relative;

@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import { IAllTranslations } from "../interfaces";
 
 import termsLine from "../images/line.svg";
-import firstDotine from "../images/first_article_dot-line.svg";
-import secondDotine from "../images/second_article_dot-line.svg";
+import firstDotline from "../images/first_article_dot-line.svg";
+import secondDotline from "../images/second_article_dot-line.svg";
 
 import styles from "./terms.module.css";
 
@@ -40,12 +40,12 @@ const Terms: React.FC = () => {
         <img className={styles.line} src={termsLine} alt="" />
         <img
           className={styles.dotlineLeft}
-          src={firstDotine}
+          src={firstDotline}
           alt=""
         />
         <img
           className={styles.dotlineRight}
-          src={secondDotine}
+          src={secondDotline}
           alt=""
         />
       </div>

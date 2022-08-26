@@ -47,6 +47,11 @@ export default function Features() {
         </div>
           </div>
           <div className="features__love">
+          <img
+                className="features__love-logo"
+                src={logoLF}
+                alt="Love Frontend"
+              />
             <p className="features__love-text">
               Я являюсь владельцем популярного в России сообщества Love
               Frontend.{" "}
@@ -55,11 +60,6 @@ export default function Features() {
               className="features__love-link"
               href="https://vk.com/love_frontend"
             >
-              <img
-                className="features__love-logo"
-                src={logoLF}
-                alt="Love Frontend"
-              />
             </a>
           </div>
           <div className="features__design">
@@ -86,31 +86,31 @@ export default function Features() {
       </section>
       {/* End of dekstop version */}
       {/* Mobile version */}
-      <section className="features-mobile">
+      <section className="features_mobile_type">
         <h2>Open-source projects on GitHub</h2>
         <div className="horizontal-content">
-          <div>
+          <p className="features__vue-text_mobile_type">
             I have a few open-source projects on my{" "}
             <a href="https://github.com/KamilOcean">GitHub profile</a>. Few of
             them are in vue-awesome-list:{" "}
             <a href="https://github.com/KamilOcean/vue-sticker">vue-sticker</a>,{" "}
             <a href="https://github.com/RGRU/vue-mods-names">vue-mods-names</a>.
-          </div>
+          </p>
           <img src="/vue-sticker.gif" />
         </div>
         <h2>Other</h2>
         <div className="horizontal-content reversed">
-          <div>
+          <p className="features__love-text_mobile_type">
             I am owner of the popular Russian community{" "}
             <a href="https://vk.com/love_frontend">Love Frontend</a>
-          </div>
+          </p>
           <img src={logoLF} alt="Love Frontend" className="lf-logo" />
         </div>
         <div className="horizontal-content">
-          <div>
+          <p className="features__code-title_mobile_type">
             I have this rank on{" "}
             <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
-          </div>
+          </p>
           <img
           img className="features__code-image"
             src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true"
@@ -118,13 +118,13 @@ export default function Features() {
           />
         </div>
         <div className="horizontal-content reversed">
-          <div>
+          <p className="features__stack-title_mobile_type">
             I have this rank on{" "}
             <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
               Stack Overflow
             </a>
             : 526 scores
-          </div>
+          </p>
           <img className="features__stack-image"src="/stackoverflow.jpg" alt="stackoveflow" />
         </div>
         <div className="horizontal-content">
