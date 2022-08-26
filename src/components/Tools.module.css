@@ -1,0 +1,217 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto 50px;
+}
+
+@media screen and (max-width: 690px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.title {
+  max-width: 1120px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #111827;
+  margin: 0 auto 60px;
+}
+
+@media screen and (max-width: 690px) {
+  .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
+
+.content {
+  width: 100%;
+}
+
+.subTitle {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #111827;
+  margin: 0 0 60px;
+}
+
+@media screen and (max-width: 425px) {
+  .subTitle {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
+
+.favoriteTools {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 690px) {
+  .favoriteTools {
+    max-width: calc(100% - 10px * 2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .favoriteTools {
+    max-width: calc(100% - 10px * 2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .favoriteTools {
+    max-width: calc(100% - 10px * 2);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+  }
+}
+
+.favoriteTool {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  font-weight: bold;
+}
+
+.favoriteToolImage {
+  flex-grow: 1;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.favoriteToolName {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.allTools {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 60px 110px;
+  box-sizing: border-box;
+  background-image: url(../images/dot_background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .allTools {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .allTools {
+    display: none;
+  }
+}
+
+.allToolsList {
+  width: 200px;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.toolsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.toolsListTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.045em;
+  color: #111827;
+  margin: 0 0 40px;
+}
+
+@media screen and (max-width: 1080px) {
+  .toolsListTitle {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+}
+
+.toolItem {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .toolItem {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+}
+
+.toolItem:last-of-type {
+  margin-bottom: 0;
+}
+
+.description {
+  display: none;
+}
+
+@media screen and (max-width: 690px) {
+  .description {
+    max-width: calc(100% - 10px * 2);
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 29px;
+    margin-bottom: 25px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+}

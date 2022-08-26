@@ -261,67 +261,6 @@ h3 {
   margin-bottom: 30px;
 }
 
-/*Terms*/
-
-.terms-block {
-  max-width: 1310px;
-  margin: 0 auto 50px;
-  text-align: left;
-}
-
-.terms__title-block {
-  margin-bottom: 100px;
-  position: relative;
-}
-
-.terms__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  color: #111827;
-  margin: 0 0 0 50px;
-}
-
-.terms__line {
-  margin-left: 73px;
-  position: absolute;
-  left: -50px;
-}
-
-.terms__dotline_type_left {
-  position: absolute;
-  top: 25px;
-  left: 385px;
-}
-
-.terms__dotline_type_right {
-  position: absolute;
-  top: 25px;
-  left: 385px;
-}
-
-
-
-.terms__items {
-  list-style-image: url(./images/check_icon.svg);
-  padding: 0;
-}
-
-.terms__item {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 29px;
-  color: #111827;
-  margin-bottom: 40px;
-}
-
-.terms li {
-  margin-bottom: 15px;
-}
-
-/*End Terms*/
-
 .slick-slide {
   margin-right: 25px;
 }
@@ -356,55 +295,9 @@ h3 {
   color: #D9D8D3;
 }
 
-/* .iframeVideo {
-  background-color: #8BA8B5;
-} */
-
-
-@media screen and (max-width: 1600px) {
-  .terms-block {
-    max-width: calc(100% - 75px * 2);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .terms__title-block {
-    margin-bottom: 50px;
-    position: relative;
-  }
-
-  .terms__dotline_type_left {
-    display: none;
-  }
-
-  .terms__dotline_type_right {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  .App {
-    margin: 0 20px;
-  }
-
   .framework {
     margin-top: 20px;
-  }
-
-  .terms__title {
-    font-size: 29px;
-    margin-left: 0;
-  }
-
-  .terms__line {
-    left: -100px;
-    width: 300px;
-  }
-
-  .terms__item {
-    font-size: 18px;
-    line-height: 1.2;
-    margin-bottom: 20px;
   }
 
   .job_1::before {
@@ -420,46 +313,8 @@ h3 {
     font-size: 12px;
   }
 
-  /* .iframeVideo,
-  .youtube {
-    height: 0px;
-    padding-top: 25px;
-    padding-bottom: 56.2%;
-    position: relative;
-  } */
-
   .youtube {
     margin-left: 15px;
     margin-right: 15px;
-  }
-
-  /* .iframeVideo iframe {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-
-  .youtube iframe {
-    width: 100%;
-    height: 100%;
-  }*/
-} 
-
-
-@media screen and (max-width: 425px) {
-  .terms__title-block {
-    width: calc(100% - 10px * 2);
-  }
-  .terms__title {
-    font-size: 25px;
-    line-height: 1.2;
-    margin-left: 0;
-  }
-
-  .terms__line {
-    left: -80px;
-    width: 200px;
   }
 }

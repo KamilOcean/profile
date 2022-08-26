@@ -1,0 +1,116 @@
+.wrapper {
+  max-width: 1310px;
+  margin: 0 auto 50px;
+  text-align: left;
+}
+
+.titleBlock {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #111827;
+  margin: 0 0 0 50px;
+}
+
+.line {
+  margin-left: 73px;
+  position: absolute;
+  left: -50px;
+}
+
+.dotlineLeft {
+  position: absolute;
+  top: 25px;
+  left: 385px;
+}
+
+.dotlineRight {
+  position: absolute;
+  top: 25px;
+  left: 385px;
+}
+
+.terms {
+  list-style-image: url(../images/check_icon.svg);
+  padding: 0;
+}
+
+.term {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #111827;
+  margin-bottom: 40px;
+  text-indent: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+
+  .wrapper {
+    max-width: calc(100% - 75px * 2);
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .titleBlock {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .dotlineLeft {
+    display: none;
+  }
+
+  .dotlineRight {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+  .titleBlock {
+    width: calc(100% - 10px * 2);
+  }
+
+  .title {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-left: 0;
+  }
+
+  .line {
+    left: -80px;
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .title {
+    font-size: 29px;
+    margin-left: 0;
+  }
+
+  .line {
+    left: -100px;
+    width: 300px;
+  }
+
+  .term {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+}
