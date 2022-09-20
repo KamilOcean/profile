@@ -47,7 +47,7 @@ const Terms: React.FC = () => {
       </div>
       <ul className={styles.terms}>
         {Array.from({ length: 5 }).map((_, idx) => (
-          <li className={styles.term}>{t(`Term${idx}`)}</li>
+          <li className={styles.term} key={idx}>{t(`Term${idx}`)}</li>
         ))}
       </ul>
     </section>

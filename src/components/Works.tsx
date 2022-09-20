@@ -109,7 +109,7 @@ export default function Articles(): React.ReactElement {
       <h2 className={styles.title}>{t("Title")}</h2>
       <Slider {...settings} className={styles.slider}>
         {works.map((article: IWork, idx: number) => (
-          <a className={styles.article} href={article.url || '#'}>
+          <a className={styles.article} href={article.url || '#'} key={idx}>
             <img className={styles.image} src={article.imgUrl} alt="" />
             <span className={styles.description}>{t(`work${idx}Title`)}</span>
           </a>

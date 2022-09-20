@@ -68,8 +68,8 @@ export default function Articles(): React.ReactElement {
     <div className={styles.wrapper}>
       <h2 className={styles.title}>{t("Title")}</h2>
       <Slider {...settings} className={styles.slider}>
-        {articles.map(article => (
-          <a className={styles.article} href={article.url}>
+        {articles.map((article: IArticle, idx: number) => (
+          <a className={styles.article} href={article.url} key={idx}>
             <img className={styles.image} src={article.imgUrl} alt="" />
             <strong className={styles.articleTitle}>{article.title}</strong>
           </a>

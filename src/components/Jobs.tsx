@@ -53,7 +53,7 @@ export default function Jobs () {
     <section className={styles.wrapper}>
       <h2 className={styles.title}>{t("Commercial work experience")}</h2>
       <section className="jobs">
-        {jobs.map((job, idx: number) => (
+        {jobs.map((job: IJob, idx: number) => (
           <Job
             key={idx}
             idx={idx}

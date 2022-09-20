@@ -37,43 +37,43 @@ export default function Features() {
         <div className="features__content">
           <div className="features__vue-block">
             <p className="features__vue-text">
-              {t('GitHub')} <a href="https://github.com/KamilIsmagilov/vue-sticker" target="_blank">vue-sticker</a>, <a href="https://github.com/RGRU/vue-mods-names" target="_blank">vue-mods-names</a>
+              {t('GitHub')} <a href="https://github.com/KamilIsmagilov/vue-sticker" target="_blank" rel="noreferrer">vue-sticker</a>, <a href="https://github.com/RGRU/vue-mods-names" target="_blank" rel="noreferrer">vue-mods-names</a>
             </p>
             <img
               className="features__vue-image"
               src="/vue-sticker.gif"
-              alt="vue-image"
+              alt="vue"
             />
           </div>
           <div className="features__stack-code">
-          <div className="features__stack">
-            <p className="features__stack-title">
-              {t('I have')} <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
-                Stack Overflow
-              </a>
-              : 526 {t('Scores')}
-            </p>
-            <img
-              className="features__stack-image"
-              src="/stackoverflow.jpg"
-              alt="stackoveflow"
-            />
-          </div>
-          <div className="features__code">
-            <p className="features__code-title">{t('I have')} <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
-            </p>
-          <img className="features__code-image"
-            src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true"
-            alt="codewars"
-          />
-        </div>
+            <div className="features__stack">
+              <p className="features__stack-title">
+                {t('I have')} <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
+                  Stack Overflow
+                </a>
+                : 526 {t('Scores')}
+              </p>
+              <img
+                className="features__stack-image"
+                src="/stackoverflow.jpg"
+                alt="stackoveflow"
+              />
+            </div>
+            <div className="features__code">
+              <p className="features__code-title">{t('I have')} <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
+              </p>
+              <img className="features__code-image"
+                src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true"
+                alt="codewars"
+              />
+            </div>
           </div>
           <div className="features__love">
-          <img
-                className="features__love-logo"
-                src={logoLF}
-                alt="Love Frontend"
-              />
+            <img
+              className="features__love-logo"
+              src={logoLF}
+              alt="Love Frontend"
+            />
             <p className="features__love-text">
               {t('I am an owner')} <a
                 className="features__love-link"
@@ -96,7 +96,7 @@ export default function Features() {
             />
           </div>
           <div className="features__photo">
-            <img className="features__arrows" src={arrows} alt="arrows"/>
+            <img className="features__arrows" src={arrows} alt="arrows" />
           </div>
           {/* <img className="features__photo" src={featPhoto} alt="kamil_feat_photo"/> */}
         </div>
@@ -113,7 +113,7 @@ export default function Features() {
             <a href="https://github.com/KamilOcean/vue-sticker">vue-sticker</a>,{" "}
             <a href="https://github.com/RGRU/vue-mods-names">vue-mods-names</a>.
           </p>
-          <img src="/vue-sticker.gif" />
+          <img src="/vue-sticker.gif" alt="" />
         </div>
         <h2>Other</h2>
         <div className="horizontal-content reversed">
@@ -140,7 +140,7 @@ export default function Features() {
             </a>
             : 526 scores
           </p>
-          <img className="features__stack-image"src="/stackoverflow.jpg" alt="stackoveflow" />
+          <img className="features__stack-image" src="/stackoverflow.jpg" alt="stackoveflow" />
         </div>
         <div className="horizontal-content">
           <div className="right-text">

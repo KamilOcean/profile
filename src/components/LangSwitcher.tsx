@@ -13,7 +13,7 @@ export default function LangSwitcher(props) {
 
   return (
     <select className={styles.select} onChange={handleLangChange} value={language}>
-      {languages.map((lang: string) => <option value={lang}>{lang}</option>)}
+      {languages.map((lang: string, idx: number) => <option key={idx} value={lang}>{lang}</option>)}
     </select>
   )
 }

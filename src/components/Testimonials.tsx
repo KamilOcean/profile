@@ -34,10 +34,6 @@ export default function Testimonials(): React.ReactElement {
     slidesOnScreen = 2;
   }
 
-  // if (window.innerWidth > 1279) {
-  //   slidesOnScreen = 3;
-  // }
-
   const settings: JQuerySlickOptions = {
     dots: true,
     infinite: true,
@@ -60,7 +56,7 @@ export default function Testimonials(): React.ReactElement {
       <h2 className={styles.title}>{t("Title")}</h2>
       <Slider {...settings} className={styles.slider}>
         {testimonials.map((article: ITestimonial, idx: number) => (
-          <a className={styles.article} href={article.contactUrl || '#'}>
+          <a className={styles.article} href={article.contactUrl || '#'} key={idx}>
             <img className={styles.image} src={article.photoUrl} alt="" />
             <div className={styles.name}>{t(`name${idx}`)}</div>
             <span className={styles.text}>{t(`text${idx}`)}</span>

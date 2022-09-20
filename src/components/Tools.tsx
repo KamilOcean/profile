@@ -126,7 +126,7 @@ export default function Tools({ subsectionTitle, description }) {
         <h3 className={styles.subTitle}>{subsectionTitle}</h3>
         <div className={styles.favoriteTools}>
           {frameworks.map((framework: ITool, idx: number) => (
-            <div className={styles.favoriteTool}>
+            <div className={styles.favoriteTool} key={idx}>
               <img
                 className={styles.favoriteToolImage}
                 key={idx}
@@ -139,7 +139,7 @@ export default function Tools({ subsectionTitle, description }) {
         </div>
         <div className={styles.allTools}>
           <ToolsColumn title="Frontend">
-            {frontend.map((item: ITool) => <li className={styles.toolItem}>{item.name}</li>)}
+            {frontend.map((item: ITool, idx: number) => <li key={idx} className={styles.toolItem}>{item.name}</li>)}
           </ToolsColumn>
           <ToolsColumn title="Backend">
             {backend.map((item: ITool) => <li className={styles.toolItem}>{item.name}</li>)}
