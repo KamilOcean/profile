@@ -13,6 +13,16 @@ export interface IArticle {
   imgUrl: string;
 }
 
+export interface IWork {
+  url?: string;
+  imgUrl: string;
+}
+
+export interface ITestimonial {
+  photoUrl: string;
+  contactUrl?: string;
+}
+
 export interface ITool {
   slug?: string;
   name: string;

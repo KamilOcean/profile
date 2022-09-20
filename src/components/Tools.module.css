@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   max-width: 1920px;
-  margin: 0 auto 50px;
+  margin: 100px auto 0;
 }
 
 @media screen and (max-width: 690px) {
@@ -62,6 +62,7 @@
   margin: 0 auto 60px;
   display: flex;
   justify-content: space-between;
+  row-gap: 30px;
 }
 
 @media screen and (max-width: 690px) {
@@ -69,27 +70,6 @@
     max-width: calc(100% - 10px * 2);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .favoriteTools {
-    max-width: calc(100% - 10px * 2);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-  }
-}
-
-@media screen and (max-width: 285px) {
-  .favoriteTools {
-    max-width: calc(100% - 10px * 2);
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     justify-items: center;
   }
 }

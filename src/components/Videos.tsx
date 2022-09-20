@@ -23,19 +23,24 @@ export default function Videos(): React.ReactElement {
     "https://www.youtube.com/embed/ykJcySti-ms",
   ];
 
+  let slidesOnScreen: number = 1;
+
+  if (window.innerWidth > 640) {
+    slidesOnScreen = 2;
+  }
+
+  if (window.innerWidth > 1279) {
+    slidesOnScreen = 3;
+  }
+
   const settings: JQuerySlickOptions = {
     dots: true,
     pauseOnHover: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: slidesOnScreen,
+    slidesToScroll: slidesOnScreen,
     adaptiveHeight: true,
-    arrows: false,
   };
-
-  if (window.innerWidth > 640) {
-    settings.arrows = true;
-  }
 
   return (
     <section className={styles.wrapper}>

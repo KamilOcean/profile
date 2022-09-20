@@ -5,10 +5,10 @@ import { IAllTranslations } from "../interfaces";
 
 export const footerTranslations: IAllTranslations = {
   en: {
-    "Description": ""
+    "Description": "Contact me in any convenient way and we will discuss your project in more details"
   },
   ru: {
-    "Description": "Свяжитесь со мной любым удобным для Вас способом и мы обсудим подробнее ваш проект"
+    "Description": "Свяжитесь со мной любым удобным способом и мы обсудим подробнее ваш проект"
   }
 }
 

@@ -10,10 +10,10 @@ import bottomImage from "../images/border_bottom.png";
 
 export const jumbotronTranslations: IAllTranslations = {
   en: {
-    "Title": "Kamil Ocean is an experienced web developer (full-stack)"
+    "Title": "Kamil Ismagilov is an experienced web developer (full-stack)"
   },
   ru: {
-    "Title": "Камиль Океан - профессиональный web разработчик (full-stack)"
+    "Title": "Камиль Исмагилов - профессиональный web разработчик (full-stack)"
   }
 }
 

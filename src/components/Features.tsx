@@ -1,18 +1,43 @@
 import "./Features.css";
+import { useTranslation } from "react-i18next";
+import { IAllTranslations } from "../interfaces";
+
 import logoLF from "../images/love_frontend_logo.png";
 import arrows from "../images/feat_arrows.svg";
 
+export const featuresTranslations: IAllTranslations = {
+  en: {
+    "Title": "Technical achievements",
+    "I have": "I have this rank on",
+    "Scores": "scores",
+    "I am an owner": "I am an owner of popular Russian community",
+    "GitHub": `There are open-source projects in my GitHub profile. A few of them are in vue-awesome list: vue-sticker and vue-mods-names`,
+    "PM": "I studied web design and Product Management. I can test hypothesis and I made",
+    "PM2": "for my previous client. I also can interview users to prove hypotheses and collect feedback on our product",
+  },
+  ru: {
+    "Title": "Технические достижения",
+    "I have": "У меня следующий ранг на ",
+    "Scores": "очков",
+    "I am an owner": "Я являюсь владельцем популярного в России сообщества",
+    "GitHub": `В моем профиле на GitHub есть несколько проектов с открытым
+    исходным кодом. Некоторые из них находятся в vue-awesome-list:
+    vue-sticker, vue-mods-names`,
+    "PM": "Я изучал веб-дизайн и управление продуктами. Я могу проверять гипотезы разными способами и сделал",
+    "PM2": "для своего предыдущего клиента. Я также провожу глубинные интервью, чтобы проверить гипотезы и собрать отзывы о нашем продукте",
+  }
+};
+
 export default function Features() {
+  const { t } = useTranslation('features');
   return (
     <div className="features-block">
       <section className="features">
-        <h2 className="features__title">Плюшки</h2>
+        <h2 className="features__title">{t('Title')}</h2>
         <div className="features__content">
           <div className="features__vue-block">
             <p className="features__vue-text">
-              В моем профиле на GitHub есть несколько проектов с открытым
-              исходным кодом. Немногие из них находятся в vue-awesome-list:
-              vue-sticker, vue-mods-names.
+              {t('GitHub')} <a href="https://github.com/KamilIsmagilov/vue-sticker" target="_blank">vue-sticker</a>, <a href="https://github.com/RGRU/vue-mods-names" target="_blank">vue-mods-names</a>
             </p>
             <img
               className="features__vue-image"
@@ -23,12 +48,10 @@ export default function Features() {
           <div className="features__stack-code">
           <div className="features__stack">
             <p className="features__stack-title">
-              {" "}
-              I have this rank on{" "}
-              <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
+              {t('I have')} <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
                 Stack Overflow
               </a>
-              : 526 scores
+              : 526 {t('Scores')}
             </p>
             <img
               className="features__stack-image"
@@ -37,8 +60,7 @@ export default function Features() {
             />
           </div>
           <div className="features__code">
-            <p className="features__code-title">I have this rank on{" "}
-            <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
+            <p className="features__code-title">{t('I have')} <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
             </p>
           <img className="features__code-image"
             src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true"
@@ -53,24 +75,19 @@ export default function Features() {
                 alt="Love Frontend"
               />
             <p className="features__love-text">
-              Я являюсь владельцем популярного в России сообщества Love
-              Frontend.{" "}
+              {t('I am an owner')} <a
+                className="features__love-link"
+                href="https://vk.com/love_frontend"
+              >
+                Love Frontend
+              </a>
             </p>
-            <a
-              className="features__love-link"
-              href="https://vk.com/love_frontend"
-            >
-            </a>
           </div>
           <div className="features__design">
             <p className="features__design-text">
-              Я изучал веб-дизайн и управление продуктами. Я умею проверять
-              гипотезы и сделал{" "}
-              <a href="https://miro.com/app/board/o9J_lb-0teE=/?share_link_id=262422631335">
+              {t("PM")} <a href="https://miro.com/app/board/o9J_lb-0teE=/?share_link_id=262422631335">
                 CJM
-              </a>{" "}
-              для своего предыдущего клиента. Я также опрашиваю пользователей,
-              чтобы проверить гипотезу и собрать отзывы о продуктах.
+              </a> {t("PM2")}
             </p>
             <img
               className="features__design-image"
@@ -108,19 +125,17 @@ export default function Features() {
         </div>
         <div className="horizontal-content">
           <p className="features__code-title_mobile_type">
-            I have this rank on{" "}
-            <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
+            I have this rank on <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
           </p>
           <img
-          img className="features__code-image"
+            className="features__code-image"
             src="https://www.codewars.com/users/KamilOcean/badges/large?logo=true"
             alt="codewars"
           />
         </div>
         <div className="horizontal-content reversed">
           <p className="features__stack-title_mobile_type">
-            I have this rank on{" "}
-            <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
+            I have this rank on <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
               Stack Overflow
             </a>
             : 526 scores

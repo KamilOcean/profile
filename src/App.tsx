@@ -9,6 +9,8 @@ import Features from "./components/Features.tsx";
 import Footer from "./components/Footer.tsx";
 import Terms from './components/Terms.tsx';
 import Jobs from './components/Jobs.tsx';
+import Works from './components/Works.tsx';
+import Testimonials from './components/Testimonials.tsx';
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
@@ -24,6 +26,8 @@ function App() {
       </header>
       <Jumbotron />
       <Terms />
+      <Works />
+      <Testimonials />
       <Jobs />
       <Tools />
       <Articles />

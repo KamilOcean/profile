@@ -1,5 +1,6 @@
 import React from "react";
 import { IAllTranslations, ITool } from "../interfaces";
+import { useTranslation } from "react-i18next";
 import styles from "./Tools.module.css";
 
 const frameworks: ITool[] = [
@@ -13,11 +14,7 @@ const frameworks: ITool[] = [
   },
   {
     slug: "polymer",
-    name: "Polymer",
-  },
-  {
-    slug: "svelte",
-    name: "Svelte",
+    name: "NestJS",
   },
 ];
 
@@ -112,7 +109,8 @@ export const toolsTranslations: IAllTranslations = {
   }
 }
 
-export default function Tools({ sectionTitle, subsectionTitle, description }) {
+export default function Tools({ subsectionTitle, description }) {
+  const { t } = useTranslation('tools');
   const ToolsColumn: any = ({ children, title }: React.PropsWithChildren) => (
     <div className={styles.allToolsList}>
       <h4 className={styles.toolsListTitle}>{title}</h4>
@@ -123,7 +121,7 @@ export default function Tools({ sectionTitle, subsectionTitle, description }) {
   );
   return (
     <section className={styles.wrapper}>
-      <h2 className={styles.title}>{sectionTitle}</h2>
+      <h2 className={styles.title}>{t('Title')}</h2>
       <div className={styles.content}>
         <h3 className={styles.subTitle}>{subsectionTitle}</h3>
         <div className={styles.favoriteTools}>

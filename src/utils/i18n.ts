@@ -7,6 +7,9 @@ import { jumbotronTranslations } from "../components/Jumbotron.tsx";
 import { footerTranslations } from "../components/Footer.tsx";
 import { articlesTranslations } from "../components/Articles.tsx";
 import { toolsTranslations } from "../components/Tools.tsx";
+import { featuresTranslations } from "../components/Features.tsx";
+import { worksTranslations } from "../components/Works.tsx";
+import { testimonialsTranslations } from "../components/Testimonials.tsx";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -22,6 +25,9 @@ i18n
         footer: footerTranslations.en,
         articles: articlesTranslations.en,
         tools: toolsTranslations.en,
+        features: featuresTranslations.en,
+        works: worksTranslations.en,
+        testimonials: testimonialsTranslations.en,
         common: {
           "Commercial work experience": "Commercial work experience more than 8 years",
         }
@@ -32,7 +38,10 @@ i18n
         videos: videosTranslations.ru,
         footer: footerTranslations.ru,
         articles: articlesTranslations.ru,
-        tools: toolsTranslations.en,
+        tools: toolsTranslations.ru,
+        features: featuresTranslations.ru,
+        works: worksTranslations.ru,
+        testimonials: testimonialsTranslations.ru,
         common: {
           "Commercial work experience": "Коммерческий опыт разработки более 8 лет",
         }

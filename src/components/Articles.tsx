@@ -16,14 +16,24 @@ export const articlesTranslations: IAllTranslations = {
 export default function Articles(): React.ReactElement {
   const { t } = useTranslation('articles');
 
+  let slidesOnScreen: number = 1;
+
+  if (window.innerWidth > 640) {
+    slidesOnScreen = 2;
+  }
+
+  if (window.innerWidth > 1279) {
+    slidesOnScreen = 3;
+  }
+
   const settings: JQuerySlickOptions = {
     dots: true,
-    infinite: true,
-    autoplay: true,
+    // infinite: true,
+    // autoplay: true,
     pauseOnHover: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    // speed: 500,
+    slidesToShow: slidesOnScreen,
+    slidesToScroll: slidesOnScreen
   };
 
   const articles: IArticle[] = [

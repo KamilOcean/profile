@@ -1,8 +1,14 @@
 .wrapper {
-  background-image: url(../images/articles_background.png);
-  background-size: contain;
-  background-position: center;
   width: 100vw;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper {
+    background-image: url(../images/articles_background.png);
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .title {
@@ -10,11 +16,20 @@
   font-size: 40px;
   line-height: 48px;
   color: #111827;
-  margin: 250px 0 0;
 }
 
 .slider {
-  margin-top: 150px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 640px) {
+
+  .slider {
+    max-width: 80%;
+  }
+
 }
 
 .wrapper iframe {

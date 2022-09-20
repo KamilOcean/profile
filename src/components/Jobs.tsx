@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { IJob } from "../interfaces";
+import styles from "./Jobs.module.css";
 
 export default function Jobs () {
   const { t } = useTranslation('common');
@@ -49,8 +50,8 @@ export default function Jobs () {
     </>
   );
   return (
-    <>
-      <h2 className="job__section-title">{t("Commercial work experience")}</h2>
+    <section className={styles.wrapper}>
+      <h2 className={styles.title}>{t("Commercial work experience")}</h2>
       <section className="jobs">
         {jobs.map((job, idx: number) => (
           <Job
@@ -63,6 +64,6 @@ export default function Jobs () {
           />
         ))}
       </section>
-    </>
+    </section>
   )
 }
