@@ -13,7 +13,7 @@ const frameworks: ITool[] = [
     name: "Vue",
   },
   {
-    slug: "polymer",
+    slug: "nest",
     name: "NestJS",
   },
 ];

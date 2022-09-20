@@ -46,9 +46,9 @@ export default function Videos(): React.ReactElement {
     <section className={styles.wrapper}>
       <h2 className={styles.title}>{t("Title")}</h2>
       <Slider {...settings} className={styles.slider}>
-        {videosUrl.map((url: string) => {
+        {videosUrl.map((url: string, idx: number) => {
           return (
-            <div>
+            <div key={idx}>
               <iframe
                 src={url}
                 title="YouTube video player"
