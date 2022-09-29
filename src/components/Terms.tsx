@@ -11,11 +11,11 @@ import styles from "./terms.module.css";
 export const termsTranslations: IAllTranslations = {
   en: {
     "Title": "How I can help you",
-    "Term0": "I will make a web service of any complexity for any purpose",
+    "Term0": "I will make a web application of any complexity for any purpose",
     "Term1": "I will make a landing page to sell your services",
-    "Term2": "I will make an MVP to test your hypotheses without extra effort",
     "Term3": "I will do any technical work on your already finished project",
-    "Term4": "I will make for you a Telegram bot",
+    "Term4": "I will make a Telegram bot for you",
+    "Term2": "I will make an MVP to test your hypotheses without extra effort",
   },
   ru: {
     "Title": "Чем я могу быть полезен",

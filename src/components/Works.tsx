@@ -9,7 +9,7 @@ export const worksTranslations: IAllTranslations = {
     "Title": "My works",
     "work0Title": "E-commerce shop for RG.RU. Vue, Vuex. I made the whole frontend of this project.",
     "work1Title": "Ads mobile project for Mexican National Team. Preact.",
-    "work2Title": "Fornex.com - I worked as lead Frontend developer in Team.",
+    "work2Title": "Fornex.com - I worked as lead Frontend developer in a team.",
     "work3Title": "God Literatury - special project for RG.RU",
     "work4Title": "Life Style - special project for RG.RU",
     "work5Title": "Malta. Ads project for RG.RU",

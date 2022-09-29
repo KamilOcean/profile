@@ -10,10 +10,10 @@ export const featuresTranslations: IAllTranslations = {
     "Title": "Technical achievements",
     "I have": "I have this rank on",
     "Scores": "scores",
-    "I am an owner": "I am an owner of popular Russian community",
+    "I am an owner": "I am an owner of a popular Russian community",
     "GitHub": `There are open-source projects in my GitHub profile. A few of them are in vue-awesome list: vue-sticker and vue-mods-names`,
-    "PM": "I studied web design and Product Management. I can test hypothesis and I made",
-    "PM2": "for my previous client. I also can interview users to prove hypotheses and collect feedback on our product",
+    "PM": "I studied web design and Product Management. I can test hypotheses and I made",
+    "PM2": "for my previous client. I can also interview users to prove hypotheses and collect feedback on our product",
   },
   ru: {
     "Title": "Технические достижения",
