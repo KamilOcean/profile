@@ -8,7 +8,7 @@ export const worksTranslations: IAllTranslations = {
   en: {
     "Title": "My works",
     "work0Title": "E-commerce shop for RG.RU. Vue, Vuex. I made the whole frontend of this project.",
-    "work1Title": "Ads mobile project for Mexican National Team. Preact.",
+    // "work1Title": "Ads mobile project for Mexican National Team. Preact.",
     "work2Title": "Fornex.com - I worked as lead Frontend developer in a team.",
     "work3Title": "God Literatury - special project for RG.RU",
     "work4Title": "Life Style - special project for RG.RU",
@@ -22,7 +22,7 @@ export const worksTranslations: IAllTranslations = {
   ru: {
     "Title": "Мои работы",
     "work0Title": "Интернет магазин для RG.RU. Vue, Vuex. Я сделал всю frontend часть проекта.",
-    "work1Title": "Рекламный мобильный проект для Мексиканской Национальной сборной. Preact",
+    // "work1Title": "Рекламный мобильный проект для Мексиканской Национальной сборной. Preact",
     "work2Title": "Fornex.com - работал в этой компании в качестве lead Frontend developer.",
     "work3Title": "Год литературы - специальный проект для RG.RU",
     "work4Title": "Стиль Жизни - специальный проект для RG.RU",
@@ -63,10 +63,10 @@ export default function Articles(): React.ReactElement {
       url: 'https://rg.ru/subs',
       imgUrl: '/subsmag.jpg'
     },
-    {
-      url: 'https://pwtp.att.com/fmf',
-      imgUrl: '/mxnt.jpg'
-    },
+    // {
+    //   url: 'https://pwtp.att.com/fmf',
+    //   imgUrl: '/mxnt.jpg'
+    // },
     {
       url: 'https://fornex.com/en/',
       imgUrl: '/fornex.jpg'
