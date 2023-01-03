@@ -8,30 +8,28 @@ export const worksTranslations: IAllTranslations = {
   en: {
     "Title": "My works",
     "work0Title": "E-commerce shop for RG.RU. Vue, Vuex. I made the whole frontend of this project.",
-    // "work1Title": "Ads mobile project for Mexican National Team. Preact.",
-    "work2Title": "Fornex.com - I worked as lead Frontend developer in a team.",
-    "work3Title": "God Literatury - special project for RG.RU",
-    "work4Title": "Life Style - special project for RG.RU",
-    "work5Title": "Malta. Ads project for RG.RU",
-    "work6Title": "East Economic Forum - special project for RG.RU",
-    "work7Title": "Property - special project for RG.RU",
-    "work8Title": "Bank of Questions - special project for RG.RU",
-    "work9Title": "Admin panel for editors in RG.RU. I worked in our team and did many tasks with React, Redux, GraphQL and QuillJS (private project)",
-    "work10Title": "CovidQuestions - special project for RG.RU"
+    "work1Title": "Fornex.com - I worked as lead Frontend developer in a team.",
+    "work2Title": "God Literatury - special project for RG.RU",
+    "work3Title": "Life Style - special project for RG.RU",
+    "work4Title": "Malta. Ads project for RG.RU",
+    "work5Title": "East Economic Forum - special project for RG.RU",
+    "work6Title": "Property - special project for RG.RU",
+    "work7Title": "Bank of Questions - special project for RG.RU",
+    "work8Title": "Admin panel for editors in RG.RU. I worked in our team and did many tasks with React, Redux, GraphQL and QuillJS (private project)",
+    "work9Title": "CovidQuestions - special project for RG.RU"
   },
   ru: {
     "Title": "Мои работы",
     "work0Title": "Интернет магазин для RG.RU. Vue, Vuex. Я сделал всю frontend часть проекта.",
-    // "work1Title": "Рекламный мобильный проект для Мексиканской Национальной сборной. Preact",
-    "work2Title": "Fornex.com - работал в этой компании в качестве lead Frontend developer.",
-    "work3Title": "Год литературы - специальный проект для RG.RU",
-    "work4Title": "Стиль Жизни - специальный проект для RG.RU",
-    "work5Title": "Мальта. Специальный проект для RG.RU",
-    "work6Title": "ВЭФ - специальный проект для RG.RU",
-    "work7Title": "Квадратный метр - специальный проект для RG.RU",
-    "work8Title": "Банк вопросов - специальный проект для RG.RU",
-    "work9Title": "Админка для редакции RG.RU. Работал в команде и выполнял много задач на React, Redux, GraphQL и QuillJS (проект нельзя посмотреть)",
-    "work10Title": "Банк вопросов - специальный проект для RG.RU"
+    "work1Title": "Fornex.com - работал в этой компании в качестве lead Frontend developer.",
+    "work2Title": "Год литературы - специальный проект для RG.RU",
+    "work3Title": "Стиль Жизни - специальный проект для RG.RU",
+    "work4Title": "Мальта. Специальный проект для RG.RU",
+    "work5Title": "ВЭФ - специальный проект для RG.RU",
+    "work6Title": "Квадратный метр - специальный проект для RG.RU",
+    "work7Title": "Банк вопросов - специальный проект для RG.RU",
+    "work8Title": "Админка для редакции RG.RU. Работал в команде и выполнял много задач на React, Redux, GraphQL и QuillJS (проект нельзя посмотреть)",
+    "work9Title": "Банк вопросов - специальный проект для RG.RU"
   }
 };
 
