@@ -130,7 +130,7 @@ export default function Tools({ subsectionTitle, description }) {
               <img
                 className={styles.favoriteToolImage}
                 key={idx}
-                src={`/frameworks/${framework.slug}.png`}
+                src={`/profile/frameworks/${framework.slug}.png`}
                 alt={framework.slug}
               />
               <p className={styles.favoriteToolName}>{framework.name}</p>

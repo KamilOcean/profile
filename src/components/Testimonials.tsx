@@ -57,7 +57,7 @@ export default function Testimonials(): React.ReactElement {
       <Slider {...settings} className={styles.slider}>
         {testimonials.map((article: ITestimonial, idx: number) => (
           <a className={styles.article} href={article.contactUrl || '#'} key={idx}>
-            <img className={styles.image} src={article.photoUrl} alt="" />
+            <img className={styles.image} src={"/profile" + article.photoUrl} alt="" />
             <div className={styles.name}>{t(`name${idx}`)}</div>
             <span className={styles.text}>{t(`text${idx}`)}</span>
           </a>

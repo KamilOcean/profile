@@ -41,7 +41,7 @@ export default function Features() {
             </p>
             <img
               className="features__vue-image"
-              src="/vue-sticker.gif"
+              src="/profile/vue-sticker.gif"
               alt="vue"
             />
           </div>
@@ -55,7 +55,7 @@ export default function Features() {
               </p>
               <img
                 className="features__stack-image"
-                src="/stackoverflow.jpg"
+                src="/profile/stackoverflow.jpg"
                 alt="stackoveflow"
               />
             </div>
@@ -91,7 +91,7 @@ export default function Features() {
             </p>
             <img
               className="features__design-image"
-              src="/cjm.jpg"
+              src="/profile/cjm.jpg"
               alt="my CJM"
             />
           </div>
