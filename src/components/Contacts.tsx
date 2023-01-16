@@ -13,8 +13,8 @@ const Contacts: React.FC = () => {
       </div>
       <div className={styles.contact__box}>
       <img className={styles.contact__icon} src={emailIcon} alt="logo of email" />
-        <a className={styles.contact} href="mailto:kamil-ismagilov@proton.me">
-        kamil-ismagilov@proton.me
+        <a className={styles.contact} href="mailto:kamil.ocean@gmail.com">
+        kamil.ocean@gmail.com
         </a>
       </div>
     </div>
