@@ -142,16 +142,16 @@ export default function Tools({ subsectionTitle, description }) {
             {frontend.map((item: ITool, idx: number) => <li key={idx} className={styles.toolItem}>{item.name}</li>)}
           </ToolsColumn>
           <ToolsColumn title="Backend">
-            {backend.map((item: ITool) => <li className={styles.toolItem}>{item.name}</li>)}
+            {backend.map((item: ITool, idx: number) => <li key={idx} className={styles.toolItem}>{item.name}</li>)}
           </ToolsColumn>
           <ToolsColumn title="Tests">
-            {tests.map((item: ITool) => <li className={styles.toolItem}>{item.name}</li>)}
+            {tests.map((item: ITool, idx: number) => <li key={idx} className={styles.toolItem}>{item.name}</li>)}
           </ToolsColumn>
           <ToolsColumn title="CMS">
-            {cms.map((item: ITool) => <li className={styles.toolItem}>{item.name}</li>)}
+            {cms.map((item: ITool, idx: number) => <li key={idx} className={styles.toolItem}>{item.name}</li>)}
           </ToolsColumn>
           <ToolsColumn title="Other">
-            {other.map((item: ITool) => <li className={styles.toolItem}>{item.name}</li>)}
+            {other.map((item: ITool, idx: number) => <li key={idx} className={styles.toolItem}>{item.name}</li>)}
           </ToolsColumn>
         </div>
       </div>

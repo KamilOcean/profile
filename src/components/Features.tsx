@@ -113,7 +113,7 @@ export default function Features() {
             <a href="https://github.com/KamilOcean/vue-sticker">vue-sticker</a>,{" "}
             <a href="https://github.com/RGRU/vue-mods-names">vue-mods-names</a>.
           </p>
-          <img src="/vue-sticker.gif" alt="" />
+          <img src="/profile/vue-sticker.gif" alt="" />
         </div>
         <h2>Other</h2>
         <div className="horizontal-content reversed">
@@ -140,7 +140,7 @@ export default function Features() {
             </a>
             : 526 scores
           </p>
-          <img className="features__stack-image" src="/stackoverflow.jpg" alt="stackoveflow" />
+          <img className="features__stack-image" src="/profile/stackoverflow.jpg" alt="stackoveflow" />
         </div>
         <div className="horizontal-content">
           <div className="right-text">
@@ -152,7 +152,7 @@ export default function Features() {
             for my previous client. I also interview users to check hypotesis
             and collect UX feedbacks about products.
           </div>
-          <img className="features__design-image" src="/cjm.jpg" alt="my CJM" />
+          <img className="features__design-image" src="/profile/cjm.jpg" alt="my CJM" />
         </div>
       </section>
     </div>

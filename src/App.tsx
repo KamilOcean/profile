@@ -2,7 +2,6 @@ import "./App.css";
 import i18n from "./utils/i18n.ts";
 import Tools from "./components/Tools.tsx";
 import Videos from "./components/Videos.tsx";
-import LangSwitcher from "./components/LangSwitcher.tsx";
 import Jumbotron from "./components/Jumbotron.tsx";
 import Articles from "./components/Articles.tsx";
 import Features from "./components/Features.tsx";
@@ -21,9 +20,9 @@ if (params?.lang) {
 function App() {
   return (
     <div className="App">
-      <header className="header">
+      {/* <header className="header">
         <LangSwitcher i18n={i18n} />
-      </header>
+      </header> */}
       <Jumbotron />
       <Terms />
       <Works />
