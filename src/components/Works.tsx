@@ -15,7 +15,7 @@ export const worksTranslations: IAllTranslations = {
     "work5Title": "East Economic Forum - special project for RG.RU",
     "work6Title": "Property - special project for RG.RU",
     "work7Title": "Bank of Questions - special project for RG.RU",
-    "work8Title": "Admin panel for editors in RG.RU. I worked in our team and did many tasks with React, Redux, GraphQL and QuillJS (private project)",
+    "work8Title": "Admin panel. React, Redux, GraphQL and QuillJS (private project)",
     "work9Title": "CovidQuestions - special project for RG.RU"
   },
   ru: {
