@@ -11,11 +11,11 @@ import styles from "./terms.module.css";
 export const termsTranslations: IAllTranslations = {
   en: {
     "Title": "How I can help you",
-    "Term0": "I developed different SPA. With React, Vue and Angular ecosystems. Mostly they are admin panels (that's why I don't have them in my portfolio)",
-    "Term1": "In RG.RU I made many optimizations and performance refinements like page speed, TTFB, TTFP, and I worked with SSR.",
-    "Term3": "I worked with AMP, PWA, Push Notifications, Firebase, QuillJS, RactiveJS, RXJS, Lodash, Tailwind, SASS, Bootstrap",
+    "Term0": "Developing different SPA. With React, Vue and Angular ecosystems. Mostly they are admin panels",
+    "Term1": "Many optimizations and performance refinements like page speed, TTFB, TTFP, and I worked with SSR.",
+    "Term3": "AMP, PWA, Push Notifications, Firebase, QuillJS, RactiveJS, RXJS, Lodash, Tailwind, SASS, Bootstrap",
     "Term4": "I worked a little as a back-end developer on Ruby and NodeJS. Plus I made a small utility on GoLang",
-    "Term2": "I worked with REST, GraphQL.",
+    "Term2": "REST, GraphQL.",
   },
   ru: {
     "Title": "Чем я могу быть полезен",

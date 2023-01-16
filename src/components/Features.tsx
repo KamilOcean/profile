@@ -107,7 +107,7 @@ export default function Features() {
         <h2>Open-source projects on GitHub</h2>
         <div className="horizontal-content">
           <p className="features__vue-text_mobile_type">
-            I have a few open-source projects on my{" "}
+            Open-source projects on my{" "}
             <a href="https://github.com/KamilOcean">GitHub profile</a>. Few of
             them are in vue-awesome-list:{" "}
             <a href="https://github.com/KamilOcean/vue-sticker">vue-sticker</a>,{" "}
@@ -125,7 +125,7 @@ export default function Features() {
         </div>
         <div className="horizontal-content">
           <p className="features__code-title_mobile_type">
-            I have this rank on <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
+            My rank on <a href="https://www.codewars.com/users/KamilOcean">CodeWars</a>
           </p>
           <img
             className="features__code-image"
@@ -135,7 +135,7 @@ export default function Features() {
         </div>
         <div className="horizontal-content reversed">
           <p className="features__stack-title_mobile_type">
-            I have this rank on <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
+            Rank on <a href="https://stackoverflow.com/users/7047488/kamil-ocean">
               Stack Overflow
             </a>
             : 526 scores
@@ -144,13 +144,11 @@ export default function Features() {
         </div>
         <div className="horizontal-content">
           <div className="right-text">
-            I studied web-design and Product Management. I know how to test
-            hypotesis and I made{" "}
+            I studied web-design and Product Management. We can test
+            hypotesis and make {" "}
             <a href="https://miro.com/app/board/o9J_lb-0teE=/?share_link_id=262422631335">
-              a CJM
+              a CJM like this.
             </a>{" "}
-            for my previous client. I also interview users to check hypotesis
-            and collect UX feedbacks about products.
           </div>
           <img className="features__design-image" src="/profile/cjm.jpg" alt="my CJM" />
         </div>
