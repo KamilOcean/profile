@@ -19,6 +19,7 @@ export default function Videos(): React.ReactElement {
   const videosUrl: string[] = [
     "https://www.youtube.com/embed/YKjCysJKqxc",
     "https://www.youtube.com/embed/JCaGGw-WWks",
+    "https://www.youtube.com/embed/seV-9siTW4g",
     "https://www.youtube.com/embed/pBRbQ4MfkAc",
     "https://www.youtube.com/embed/ykJcySti-ms",
   ];
