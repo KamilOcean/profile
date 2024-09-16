@@ -7,8 +7,8 @@ const Contacts: React.FC = () => {
     <div className={styles.wrapper}>
       <div className={styles.contact__box}>
         <img className={styles.contact__icon} src={telegramIcon} alt="logo of telegram" />
-        <a className={styles.contact} href="https://t.me/ismagilov_kamil">
-          Telegram: @ismagilov_kamil
+        <a className={styles.contact} href="https://t.me/KamilOcean">
+          Telegram: @KamilOcean
         </a>
       </div>
       <div className={styles.contact__box}>

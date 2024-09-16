@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import * as d3 from "d3";
+import {select, selectAll} from "d3";
 import { IJob } from "../interfaces";
 import styles from "./Jobs.module.css";
 
@@ -8,7 +10,7 @@ export default function Jobs () {
     {
       title: "F&B",
       year: "2014",
-      position: "Front-end developer at small startup",
+      position: "Front-end developer",
       color: "var(--4color)",
     },
     {
@@ -20,15 +22,27 @@ export default function Jobs () {
     {
       title: "Fornex Hosting",
       year: "2021",
-      position: "Lead front-end developer",
+      position: "Lead front-end",
       color: "var(--2color)",
     },
     {
       title: "Dream Team Mobile",
-      year: "2022 - now",
+      year: "2022 - 2023",
       position: "Fullstack developer",
       color: "var(--3color)",
     },
+    {
+      title: "Merlin Clone",
+      year: "2023",
+      position: "Lead front-end",
+      color: "var(--4color)",
+    },
+    {
+      title: "Wild Show Biz (UpWork)",
+      year: "2024",
+      position: "Full-stack developer",
+      color: "var(--1color)",
+    }
   ];
   const Job: React.FC = (props: IJob) => (
     <>

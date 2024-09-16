@@ -4,7 +4,7 @@ import styles from "./Jumbotron.module.css";
 
 import Contacts from "./Contacts.tsx";
 
-import mainphoto from "../images/mainphoto.png";
+import mainphoto from "../images/mainphoto.jpg";
 import topImage from "../images/border_top.png";
 import bottomImage from "../images/border_bottom.png";
 

@@ -134,12 +134,14 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #ECF0F3;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .line_0 {
   grid-column-start: 1;
   grid-column-end: 2;
   color: white!important;
+  border-radius: 12px 0  0 12px;
 }
 
 .job_1 {
@@ -164,7 +166,7 @@ body {
 
 .line_1 {
   grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-end: 5;
 }
 
 .job_2 {
@@ -174,8 +176,8 @@ body {
   display: grid;
   align-items: flex-end;
   grid-row-start: 3;
-  grid-column-start: 5;
-  grid-column-end: 8;
+  grid-column-start: 3;
+  grid-column-end: 6;
 }
 
 .job_2::after {
@@ -202,8 +204,8 @@ body {
   display: grid;
   align-items: flex-end;
   grid-row-start: 1;
-  grid-column-start: 7;
-  grid-column-end: 10;
+  grid-column-start: 5;
+  grid-column-end: 8;
 }
 
 .job_3::before {
@@ -219,8 +221,16 @@ body {
 
 .line_3 {
   display: grid;
-  grid-column-start: 8;
-  grid-column-end: 10;
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+
+.line_4 {
+
+}
+
+.line_5 {
+  border-radius: 0 12px 12px 0;
 }
 
 @media screen and (max-width: 425px) {

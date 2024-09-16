@@ -1,6 +1,6 @@
 .wrapper {
-  background-image: url(../images/articles_background.png);
-  background-size: cover;
+  /* background-image: url(../images/articles_background.png); */
+  /* background-size: cover; */
   display: flex;
   flex-direction: column;
   align-items: center;

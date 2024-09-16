@@ -51,8 +51,10 @@
 
 .photo {
   object-fit: contain;
-  max-width: 732px;
+  max-width: 400px;
+  margin-top: 100px;
   margin-right: 90px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1760px) {
@@ -71,7 +73,6 @@
 
   .photo {
     object-fit: contain;
-    max-width: 600px;
     margin-right: 90px;
   }
 
@@ -88,7 +89,6 @@
 @media screen and (max-width: 1240px) {
   .photo {
     object-fit: contain;
-    max-width: 500px;
     margin-right: 60px;
     margin-top: 100px;
   }
@@ -116,7 +116,6 @@
 @media screen and (max-width: 1024px) {
   .photo {
     object-fit: contain;
-    max-width: 400px;
     margin-right: 30px;
     margin-top: 100px;
   }
@@ -149,7 +148,6 @@
 
   .photo {
     object-fit: cover;
-    max-width: calc(100% - 25px * 2);
     margin: 0 0 50px;
   }
 

@@ -29,7 +29,7 @@ i18n
         works: worksTranslations.en,
         testimonials: testimonialsTranslations.en,
         common: {
-          "Commercial work experience": "More than 8 years of commercial work experience",
+          "Commercial work experience": "More than 10 years of commercial work experience",
         }
       },
       ru: {
@@ -43,7 +43,7 @@ i18n
         works: worksTranslations.ru,
         testimonials: testimonialsTranslations.ru,
         common: {
-          "Commercial work experience": "Коммерческий опыт разработки более 8 лет",
+          "Commercial work experience": "Коммерческий опыт разработки более 10 лет",
         }
       }
     },
