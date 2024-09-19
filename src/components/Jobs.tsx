@@ -15,7 +15,7 @@ export default function Jobs () {
     },
     {
       title: "RG.RU",
-      year: "2015",
+      year: "2015-2021 (6 years)",
       position: "Lead front-end developer",
       color: "var(--1color)",
     },
@@ -38,7 +38,7 @@ export default function Jobs () {
       color: "var(--4color)",
     },
     {
-      title: "Wild Show Biz (UpWork)",
+      title: "Transparent Words",
       year: "2024",
       position: "Full-stack developer",
       color: "var(--1color)",

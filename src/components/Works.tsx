@@ -7,19 +7,18 @@ import { IAllTranslations, IWork } from "../interfaces";
 export const worksTranslations: IAllTranslations = {
   en: {
     "Title": "My works",
-    "work0Title": "WSB. React, Nuxt, D3",
+    "work0Title": "E-commerce shop for RG.RU. Vue, Vuex. I made the whole frontend of this project.",
     "work1Title": "Merlin Clone (Nuxt, React). Web service like ElevenLabs",
-    "work2Title": "E-commerce shop for RG.RU. Vue, Vuex. I made the whole frontend of this project.",
-    "work3Title": "Fornex.com - I worked as lead Frontend developer in a team.",
-    "work4Title": "TransparentWords.com - I've made the whole project. Nest + Vue",
-    "work5Title": "God Literatury - special project for RG.RU",
-    "work6Title": "Life Style - special project for RG.RU",
-    "work7Title": "Malta. Ads project for RG.RU",
-    "work8Title": "East Economic Forum - special project for RG.RU",
-    "work9Title": "Property - special project for RG.RU",
-    "work10Title": "Bank of Questions - special project for RG.RU",
-    "work11Title": "Admin panel. React, Redux, GraphQL and QuillJS (private project)",
-    "work12Title": "CovidQuestions - special project for RG.RU"
+    "work2Title": "Fornex.com - I worked as lead Frontend developer in a team.",
+    "work3Title": "TransparentWords.com - I've made the whole project. Nest + Vue",
+    "work4Title": "God Literatury - special project for RG.RU",
+    "work5Title": "Life Style - special project for RG.RU",
+    "work6Title": "Malta. Ads project for RG.RU",
+    "work7Title": "East Economic Forum - special project for RG.RU",
+    "work8Title": "Property - special project for RG.RU",
+    "work9Title": "Bank of Questions - special project for RG.RU",
+    "work10Title": "Admin panel. React, Redux, GraphQL and QuillJS (private project)",
+    "work11Title": "CovidQuestions - special project for RG.RU"
   },
   ru: {
     "Title": "Мои работы",
@@ -27,14 +26,13 @@ export const worksTranslations: IAllTranslations = {
     "work1Title": "Merlin Clone. Nuxt, React",
     "work2Title": "Интернет магазин для RG.RU. Vue, Vuex. Я сделал всю frontend часть проекта.",
     "work3Title": "Fornex.com - работал в этой компании в качестве lead Frontend developer.",
-    "work4Title": "Год литературы - специальный проект для RG.RU",
-    "work5Title": "Стиль Жизни - специальный проект для RG.RU",
-    "work6Title": "Мальта. Специальный проект для RG.RU",
-    "work7Title": "ВЭФ - специальный проект для RG.RU",
-    "work8Title": "Квадратный метр - специальный проект для RG.RU",
-    "work9Title": "Банк вопросов - специальный проект для RG.RU",
-    "work10Title": "Админка для редакции RG.RU. Работал в команде и выполнял много задач на React, Redux, GraphQL и QuillJS (проект нельзя посмотреть)",
-    "work11Title": "Банк вопросов - специальный проект для RG.RU"
+    "work4Title": "Стиль Жизни - специальный проект для RG.RU",
+    "work5Title": "Мальта. Специальный проект для RG.RU",
+    "work6Title": "ВЭФ - специальный проект для RG.RU",
+    "work7Title": "Квадратный метр - специальный проект для RG.RU",
+    "work8Title": "Банк вопросов - специальный проект для RG.RU",
+    "work9Title": "Админка для редакции RG.RU. Работал в команде и выполнял много задач на React, Redux, GraphQL и QuillJS (проект нельзя посмотреть)",
+    "work10Title": "Банк вопросов - специальный проект для RG.RU"
   }
 };
 
@@ -76,10 +74,6 @@ export default function Articles(): React.ReactElement {
     },
     {
       url: 'https://transparentwords.com',
-      imgUrl: '/transparentwords.jpg'
-    },
-    {
-      url: 'wsb',
       imgUrl: '/transparentwords.jpg'
     },
     {
